@@ -1,0 +1,386 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"4 D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
+[v _clcd_write clcd_write `(v  1 s 1 clcd_write ]
+"21
+[v _init_display_controller init_display_controller `(v  1 s 1 init_display_controller ]
+"44
+[v _init_clcd init_clcd `(v  1 e 1 0 ]
+"56
+[v _clcd_putch clcd_putch `(v  1 e 1 0 ]
+"62
+[v _clcd_print clcd_print `(v  1 e 1 0 ]
+"73
+[v _clcd_clear clcd_clear `(v  1 e 1 0 ]
+"11 D:\Emertxe Projects\MC Projects\Microwave Oven\isr.c
+[v _isr isr `II(v  1 e 1 0 ]
+"60 D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"70
+[v _display_menu display_menu `(v  1 s 1 display_menu ]
+"83
+[v _reset_time_entry reset_time_entry `(v  1 s 1 reset_time_entry ]
+"99
+[v _set_time set_time `(v  1 s 1 set_time ]
+"185
+[v _set_temperature set_temperature `(v  1 s 1 set_temperature ]
+"272
+[v _display_cooking_time display_cooking_time `(v  1 s 1 display_cooking_time ]
+"284
+[v _stop_and_return_to_menu stop_and_return_to_menu `(v  1 s 1 stop_and_return_to_menu ]
+"304
+[v _startup_animation startup_animation `(v  1 s 1 startup_animation ]
+"333
+[v _main main `(v  1 e 1 0 ]
+"4 D:\Emertxe Projects\MC Projects\Microwave Oven\matrix_keypad.c
+[v _init_matrix_keypad init_matrix_keypad `(v  1 e 1 0 ]
+"24
+[v _scan_keypad scan_keypad `(uc  1 s 1 scan_keypad ]
+"111
+[v _read_matrix_keypad read_matrix_keypad `(uc  1 e 1 0 ]
+"7 D:\Emertxe Projects\MC Projects\Microwave Oven\timer.c
+[v _init_timer2 init_timer2 `(v  1 e 1 0 ]
+"340 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S116 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477
+[s S125 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S130 . 1 `S116 1 . 1 0 `S125 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES130  1 e 1 @11 ]
+[s S74 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"549
+[u S83 . 1 `S74 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES83  1 e 1 @12 ]
+"725
+[v _TMR2 TMR2 `VEuc  1 e 1 @17 ]
+"732
+[v _T2CON T2CON `VEuc  1 e 1 @18 ]
+"1370
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1494
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S95 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"1630
+[u S104 . 1 `S95 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES104  1 e 1 @140 ]
+"1804
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2467
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"2470
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2473
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2542
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2545
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2548
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2551
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2569
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"2572
+[v _RE2 RE2 `VEb  1 e 0 @74 ]
+"2803
+[v _TRISE1 TRISE1 `VEb  1 e 0 @1097 ]
+"2806
+[v _TRISE2 TRISE2 `VEb  1 e 0 @1098 ]
+"2872
+[v _nRBPU nRBPU `VEb  1 e 0 @1039 ]
+"4 D:\Emertxe Projects\MC Projects\Microwave Oven\isr.c
+[v _timer_ticks timer_ticks `uc  1 s 1 timer_ticks ]
+"6
+[v _blink_flag blink_flag `VEuc  1 e 1 0 ]
+"8
+[v _blink_ticks blink_ticks `uc  1 s 1 blink_ticks ]
+"9
+[v _blink_state blink_state `uc  1 s 1 blink_state ]
+"11 D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+[v _mode mode `uc  1 s 1 mode ]
+"17
+[v _digits digits `[4]uc  1 s 4 digits ]
+"18
+[v _digit_count digit_count `uc  1 s 1 digit_count ]
+"20
+[v _time_set time_set `uc  1 s 1 time_set ]
+"22
+[v _minutes minutes `uc  1 s 1 minutes ]
+"23
+[v _seconds seconds `uc  1 s 1 seconds ]
+"26
+[v _countdown_running countdown_running `uc  1 s 1 countdown_running ]
+"28
+[v _countdown_paused countdown_paused `uc  1 s 1 countdown_paused ]
+"32
+[v _quick_start_active quick_start_active `uc  1 s 1 quick_start_active ]
+"36
+[v _temperature temperature `uc  1 s 1 temperature ]
+"38
+[v _temp_digits temp_digits `[3]uc  1 s 3 temp_digits ]
+"39
+[v _temp_digit_count temp_digit_count `uc  1 s 1 temp_digit_count ]
+"47
+[v _conv_state conv_state `uc  1 s 1 conv_state ]
+"49
+[v _preheat_seconds preheat_seconds `uc  1 s 1 preheat_seconds ]
+"52
+[v _blink_visible blink_visible `uc  1 s 1 blink_visible ]
+"53
+[v _last_digit_count last_digit_count `uc  1 s 1 last_digit_count ]
+"55
+[v _quick_start_just_started quick_start_just_started `uc  1 s 1 quick_start_just_started ]
+"4 D:\Emertxe Projects\MC Projects\Microwave Oven\timer.c
+[v _timer_1s_flag timer_1s_flag `VEuc  1 e 1 0 ]
+"333 D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"335
+[v main@key key `uc  1 a 1 26 ]
+"372
+{
+[v main@i i `uc  1 a 1 25 ]
+"375
+}
+"617
+} 0
+"284
+[v _stop_and_return_to_menu stop_and_return_to_menu `(v  1 s 1 stop_and_return_to_menu ]
+{
+"301
+} 0
+"70
+[v _display_menu display_menu `(v  1 s 1 display_menu ]
+{
+"78
+} 0
+"304
+[v _startup_animation startup_animation `(v  1 s 1 startup_animation ]
+{
+"306
+[v startup_animation@i i `uc  1 a 1 12 ]
+"330
+} 0
+"99
+[v _set_time set_time `(v  1 s 1 set_time ]
+{
+[v set_time@key key `uc  1 p 1 wreg ]
+"101
+[v set_time@position position `uc  1 a 1 13 ]
+"103
+[v set_time@key key `uc  1 p 1 15 ]
+"151
+{
+"152
+[v set_time@entered_seconds entered_seconds `uc  1 a 1 14 ]
+"177
+}
+"179
+} 1
+"83
+[v _reset_time_entry reset_time_entry `(v  1 s 1 reset_time_entry ]
+{
+"90
+{
+[v reset_time_entry@i i `uc  1 a 1 2 ]
+"93
+}
+"94
+} 0
+"4 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 p 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 2 ]
+"6
+[v ___bmul@product product `uc  1 a 1 3 ]
+[v ___bmul@multiplier multiplier `uc  1 p 1 4 ]
+"51
+} 1
+"185 D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+[v _set_temperature set_temperature `(v  1 s 1 set_temperature ]
+{
+[v set_temperature@key key `uc  1 p 1 wreg ]
+"187
+[v set_temperature@key key `uc  1 p 1 21 ]
+"207
+{
+[v set_temperature@i i `uc  1 a 1 19 ]
+"210
+}
+"217
+{
+"218
+[v set_temperature@entered_temp entered_temp `ui  1 a 2 17 ]
+"259
+{
+[v set_temperature@i_241 i `uc  1 a 1 20 ]
+"262
+}
+"266
+}
+"267
+} 1
+"73 D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
+[v _clcd_clear clcd_clear `(v  1 e 1 0 ]
+{
+"79
+} 0
+"62
+[v _clcd_print clcd_print `(v  1 e 1 0 ]
+{
+[v clcd_print@str str `*.25DCuc  1 p 2 6 ]
+[v clcd_print@addr addr `uc  1 p 1 8 ]
+"71
+} 0
+"15 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"53
+} 0
+"111 D:\Emertxe Projects\MC Projects\Microwave Oven\matrix_keypad.c
+[v _read_matrix_keypad read_matrix_keypad `(uc  1 e 1 0 ]
+{
+[v read_matrix_keypad@mode mode `uc  1 p 1 wreg ]
+"113
+[v read_matrix_keypad@once once `uc  1 s 1 once ]
+"114
+[v read_matrix_keypad@key key `uc  1 a 1 5 ]
+"116
+[v read_matrix_keypad@mode mode `uc  1 p 1 4 ]
+"137
+} 1
+"24
+[v _scan_keypad scan_keypad `(uc  1 s 1 scan_keypad ]
+{
+"26
+[v scan_keypad@i i `i  1 a 2 2 ]
+"109
+} 0
+"60 D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"65
+} 0
+"7 D:\Emertxe Projects\MC Projects\Microwave Oven\timer.c
+[v _init_timer2 init_timer2 `(v  1 e 1 0 ]
+{
+"32
+} 0
+"4 D:\Emertxe Projects\MC Projects\Microwave Oven\matrix_keypad.c
+[v _init_matrix_keypad init_matrix_keypad `(v  1 e 1 0 ]
+{
+"22
+} 0
+"44 D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
+[v _init_clcd init_clcd `(v  1 e 1 0 ]
+{
+"54
+} 0
+"21
+[v _init_display_controller init_display_controller `(v  1 s 1 init_display_controller ]
+{
+"42
+} 0
+"272 D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+[v _display_cooking_time display_cooking_time `(v  1 s 1 display_cooking_time ]
+{
+"279
+} 0
+"56 D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
+[v _clcd_putch clcd_putch `(v  1 e 1 0 ]
+{
+[v clcd_putch@data data `DCuc  1 p 1 wreg ]
+[v clcd_putch@addr addr `uc  1 p 1 8 ]
+"58
+[v clcd_putch@data data `DCuc  1 p 1 8 ]
+"60
+} 1
+"4
+[v _clcd_write clcd_write `(v  1 s 1 clcd_write ]
+{
+[v clcd_write@byte byte `uc  1 p 1 wreg ]
+[v clcd_write@mode mode `uc  1 p 1 2 ]
+"6
+[v clcd_write@byte byte `uc  1 p 1 5 ]
+"19
+} 1
+"5 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+[v ___awmod@divisor divisor `i  1 p 2 4 ]
+[v ___awmod@dividend dividend `i  1 p 2 6 ]
+"10
+[v ___awmod@counter counter `uc  1 a 1 6 ]
+[v ___awmod@sign sign `uc  1 a 1 7 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+[v ___awdiv@dividend dividend `i  1 p 2 4 ]
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"11
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+"41
+} 0
+"11 D:\Emertxe Projects\MC Projects\Microwave Oven\isr.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"30
+} 0
