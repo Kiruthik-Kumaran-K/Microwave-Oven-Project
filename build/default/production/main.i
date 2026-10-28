@@ -1854,9 +1854,7 @@ static void set_time(unsigned char key)
 
     if (digit_count < 4)
     {
-        position = (digit_count < 2)
-                   ? 6 + digit_count
-                   : 7 + digit_count;
+        position = (digit_count < 2) ? 6 + digit_count : 7 + digit_count;
 
         if (blink_flag)
         {
@@ -1864,8 +1862,7 @@ static void set_time(unsigned char key)
             blink_visible = !blink_visible;
 
             if (blink_visible)
-                clcd_putch(digits[digit_count] + '0',
-                           (0xC0 + position));
+                clcd_putch(digits[digit_count] + '0', (0xC0 + position));
             else
                 clcd_putch(' ', (0xC0 + position));
         }
@@ -1885,8 +1882,7 @@ static void set_time(unsigned char key)
         }
         else if (key == '#' && digit_count == 4)
         {
-            unsigned char entered_seconds =
-                digits[2] * 10 + digits[3];
+            unsigned char entered_seconds = digits[2] * 10 + digits[3];
 
             if (entered_seconds < 60)
             {
@@ -1910,6 +1906,13 @@ static void set_time(unsigned char key)
                 clcd_print("5 - Pause", (0x90 + (0)));
                 clcd_print("6 - Stop", (0xD0 + (0)));
             }
+            else
+            {
+                clcd_clear();
+                clcd_print("Invalid Seconds", (0x80 + 0));
+                _delay((unsigned long)((500)*(20000000/4000.0)));
+                reset_time_entry();
+            }
         }
     }
 }
@@ -1918,26 +1921,65 @@ static void set_time(unsigned char key)
 
 
 
+static unsigned char temp_blink_visible = 1;
+static unsigned char last_temp_digit_count = 255;
+
 static void set_temperature(unsigned char key)
 {
+    unsigned char position;
+
     clcd_print("SET TEMP (C)", (0x80 + 0));
     clcd_print("TEMP: ", (0xC0 + 0));
     clcd_print("*:CLEAR  #:ENTER", (0xD0 + (0)));
 
-    clcd_putch(temp_digits[0] + '0', (0xC0 + 6));
-    clcd_putch(temp_digits[1] + '0', (0xC0 + 7));
-    clcd_putch(temp_digits[2] + '0', (0xC0 + 8));
+
+    if (last_temp_digit_count != temp_digit_count)
+    {
+        clcd_putch(temp_digits[0] + '0', (0xC0 + 6));
+        clcd_putch(temp_digits[1] + '0', (0xC0 + 7));
+        clcd_putch(temp_digits[2] + '0', (0xC0 + 8));
+
+        last_temp_digit_count = temp_digit_count;
+        temp_blink_visible = 1;
+    }
+
+
+    if (temp_digit_count < 3)
+    {
+        position = 6 + temp_digit_count;
+
+        if (blink_flag)
+        {
+            blink_flag = 0;
+            temp_blink_visible = !temp_blink_visible;
+
+            if (temp_blink_visible)
+            {
+                clcd_putch(temp_digits[temp_digit_count] + '0',
+                           (0xC0 + position));
+            }
+            else
+            {
+                clcd_putch(' ', (0xC0 + position));
+            }
+        }
+    }
 
     if (key == 0xFF)
         return;
+
 
     if (key <= 9 && temp_digit_count < 3)
     {
         temp_digits[temp_digit_count] = key;
         temp_digit_count++;
+
+        last_temp_digit_count = 255;
+        temp_blink_visible = 1;
     }
     else if (key == '*')
     {
+
         temp_digit_count = 0;
 
         for (unsigned char i = 0; i < 3; i++)
@@ -1945,9 +1987,8 @@ static void set_temperature(unsigned char key)
             temp_digits[i] = 0;
         }
 
-        clcd_putch('0', (0xC0 + 6));
-        clcd_putch('0', (0xC0 + 7));
-        clcd_putch('0', (0xC0 + 8));
+        last_temp_digit_count = 255;
+        temp_blink_visible = 1;
     }
     else if (key == '#' && temp_digit_count > 0)
     {
@@ -1997,6 +2038,8 @@ static void set_temperature(unsigned char key)
                 temp_digits[i] = 0;
             }
 
+            last_temp_digit_count = 255;
+            temp_blink_visible = 1;
             clcd_clear();
         }
     }
