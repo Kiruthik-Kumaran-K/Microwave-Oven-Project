@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+$C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 C C 3 2 1
 config CONFIG 4 2007 2007 1 2 1
@@ -109,30 +109,30 @@ STRING 1175-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Microwave_Oven_Project.X.production.o
-F cinit CODE >1444:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-F cinit CODE >1447:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-F cinit CODE >1556:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-14 cinit CODE >1557:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-15 cinit CODE >1558:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-1A cinit CODE >1559:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-1B cinit CODE >1560:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-20 cinit CODE >1561:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-21 cinit CODE >1562:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-26 cinit CODE >1563:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-27 cinit CODE >1564:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-2C cinit CODE >1565:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-2D cinit CODE >1569:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-32 cinit CODE >1570:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-33 cinit CODE >1589:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-34 cinit CODE >1590:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-35 cinit CODE >1591:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-36 cinit CODE >1592:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-37 cinit CODE >1593:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-3C cinit CODE >1596:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-3D cinit CODE >1597:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-3E cinit CODE >1603:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-3E cinit CODE >1605:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-3F cinit CODE >1606:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
+F cinit CODE >1446:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+F cinit CODE >1449:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+F cinit CODE >1558:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+14 cinit CODE >1559:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+15 cinit CODE >1560:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+1A cinit CODE >1561:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+1B cinit CODE >1562:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+20 cinit CODE >1563:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+21 cinit CODE >1564:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+26 cinit CODE >1565:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+27 cinit CODE >1566:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+2C cinit CODE >1567:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+2D cinit CODE >1571:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+32 cinit CODE >1572:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+33 cinit CODE >1591:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+34 cinit CODE >1592:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+35 cinit CODE >1593:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+36 cinit CODE >1594:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+37 cinit CODE >1595:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+3C cinit CODE >1598:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+3D cinit CODE >1599:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+3E cinit CODE >1605:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+3E cinit CODE >1607:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+3F cinit CODE >1608:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
 4 intentry CODE >11:D:\Emertxe Projects\MC Projects\Microwave Oven\isr.c
 CA0 text23 CODE >11:D:\Emertxe Projects\MC Projects\Microwave Oven\isr.c
 CA0 text23 CODE >13:D:\Emertxe Projects\MC Projects\Microwave Oven\isr.c
@@ -234,13 +234,13 @@ B78 text19 CODE >56:D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
 B78 text19 CODE >58:D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
 B82 text19 CODE >59:D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
 B8A text19 CODE >60:D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
-6F1 text18 CODE >315:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-6F1 text18 CODE >317:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-70C text18 CODE >318:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-729 text18 CODE >319:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-733 text18 CODE >320:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-74E text18 CODE >321:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-76B text18 CODE >322:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+6F1 text18 CODE >310:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+6F1 text18 CODE >312:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+70C text18 CODE >313:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+729 text18 CODE >314:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+733 text18 CODE >315:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+74E text18 CODE >316:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+76B text18 CODE >317:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 D63 text17 CODE >21:D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
 D63 text17 CODE >24:D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
 D6B text17 CODE >27:D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
@@ -404,65 +404,65 @@ C3E text8 CODE >79:D:\Emertxe Projects\MC Projects\Microwave Oven\clcd.c
 48F text7 CODE >218:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 497 text7 CODE >220:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 49C text7 CODE >222:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4AA text7 CODE >224:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4AB text7 CODE >227:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4B4 text7 CODE >232:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4BC text7 CODE >236:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4BE text7 CODE >236:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4C4 text7 CODE >236:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4C8 text7 CODE >238:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4CE text7 CODE >239:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4D0 text7 CODE >241:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4D2 text7 CODE >242:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4D4 text7 CODE >243:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4D5 text7 CODE >244:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4DB text7 CODE >247:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4DC text7 CODE >249:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4DD text7 CODE >251:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4E2 text7 CODE >249:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4E6 text7 CODE >249:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4EA text7 CODE >254:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4EC text7 CODE >255:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4EE text7 CODE >256:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4EF text7 CODE >257:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4FA text7 CODE >259:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-526 text7 CODE >259:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-52E text7 CODE >259:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-532 text7 CODE >264:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-535 text7 CODE >264:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-537 text7 CODE >264:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-53E text7 CODE >264:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-540 text7 CODE >264:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-544 text7 CODE >266:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-546 text7 CODE >268:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-548 text7 CODE >269:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-54A text7 CODE >271:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-54B text7 CODE >272:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-54C text7 CODE >274:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-551 text7 CODE >276:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-55C text7 CODE >277:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-567 text7 CODE >279:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-582 text7 CODE >280:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-5AE text7 CODE >282:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-5CB text7 CODE >284:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-5D6 text7 CODE >285:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-5E0 text7 CODE >286:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-5EA text7 CODE >287:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-5F4 text7 CODE >288:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-5FF text7 CODE >289:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-600 text7 CODE >292:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-605 text7 CODE >293:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-610 text7 CODE >294:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-61B text7 CODE >296:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-62A text7 CODE >298:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-62D text7 CODE >300:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-62E text7 CODE >302:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-633 text7 CODE >300:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-637 text7 CODE >300:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-63B text7 CODE >305:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-63D text7 CODE >306:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-63F text7 CODE >307:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-644 text7 CODE >310:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4AA text7 CODE >223:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4AB text7 CODE >226:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4B4 text7 CODE >231:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4BC text7 CODE >235:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4BE text7 CODE >235:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4C4 text7 CODE >235:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4C8 text7 CODE >237:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4CE text7 CODE >238:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4D0 text7 CODE >240:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4D2 text7 CODE >241:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4D4 text7 CODE >242:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4D5 text7 CODE >243:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4DB text7 CODE >246:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4DC text7 CODE >248:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4DD text7 CODE >250:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4E2 text7 CODE >248:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4E6 text7 CODE >248:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4EA text7 CODE >253:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4EC text7 CODE >254:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4EE text7 CODE >255:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4EF text7 CODE >256:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4FA text7 CODE >258:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+526 text7 CODE >258:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+52E text7 CODE >258:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+532 text7 CODE >260:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+535 text7 CODE >260:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+537 text7 CODE >260:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+53E text7 CODE >260:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+540 text7 CODE >260:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+544 text7 CODE >262:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+546 text7 CODE >264:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+548 text7 CODE >265:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+54A text7 CODE >267:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+54B text7 CODE >268:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+54C text7 CODE >270:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+551 text7 CODE >272:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+55C text7 CODE >273:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+567 text7 CODE >275:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+582 text7 CODE >276:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+5AE text7 CODE >277:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+5CB text7 CODE >279:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+5D6 text7 CODE >280:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+5E0 text7 CODE >281:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+5EA text7 CODE >282:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+5F4 text7 CODE >283:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+5FF text7 CODE >284:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+600 text7 CODE >287:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+605 text7 CODE >288:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+610 text7 CODE >289:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+61B text7 CODE >291:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+62A text7 CODE >293:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+62D text7 CODE >295:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+62E text7 CODE >297:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+633 text7 CODE >295:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+637 text7 CODE >295:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+63B text7 CODE >300:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+63D text7 CODE >301:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+63F text7 CODE >302:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+644 text7 CODE >305:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 B8B text6 CODE >4:C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\Umul8.c
 B8B text6 CODE >6:C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\Umul8.c
 B8D text6 CODE >43:C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\Umul8.c
@@ -542,23 +542,23 @@ FDF text4 CODE >175:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 FE4 text4 CODE >176:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 FEF text4 CODE >177:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 FFF text4 CODE >182:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-76C text3 CODE >347:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-76C text3 CODE >351:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-771 text3 CODE >354:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-774 text3 CODE >356:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-77D text3 CODE >357:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-78C text3 CODE >354:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-792 text3 CODE >354:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-796 text3 CODE >360:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7A1 text3 CODE >361:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7AC text3 CODE >364:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7AF text3 CODE >366:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7B8 text3 CODE >367:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7C7 text3 CODE >364:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7CD text3 CODE >364:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7D1 text3 CODE >370:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7E0 text3 CODE >372:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7E5 text3 CODE >373:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+76C text3 CODE >342:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+76C text3 CODE >346:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+771 text3 CODE >349:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+774 text3 CODE >351:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+77D text3 CODE >352:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+78C text3 CODE >349:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+792 text3 CODE >349:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+796 text3 CODE >355:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7A1 text3 CODE >356:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7AC text3 CODE >359:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7AF text3 CODE >361:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7B8 text3 CODE >362:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7C7 text3 CODE >359:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7CD text3 CODE >359:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7D1 text3 CODE >365:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7E0 text3 CODE >367:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7E5 text3 CODE >368:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 C6E text2 CODE >70:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 C6E text2 CODE >72:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 C73 text2 CODE >74:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
@@ -566,169 +566,169 @@ C7E text2 CODE >75:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 C89 text2 CODE >76:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 C94 text2 CODE >77:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
 C9F text2 CODE >78:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7E6 text1 CODE >327:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7E6 text1 CODE >329:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7E9 text1 CODE >330:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7EA text1 CODE >332:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7EB text1 CODE >333:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7EC text1 CODE >334:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7ED text1 CODE >335:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7EE text1 CODE >337:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7EF text1 CODE >338:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7F0 text1 CODE >340:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7F5 text1 CODE >342:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7F8 text1 CODE >343:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7FD text1 CODE >344:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-42 maintext CODE >376:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-42 maintext CODE >380:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-47 maintext CODE >382:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-4C maintext CODE >384:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-51 maintext CODE >387:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-51 maintext CODE >390:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-5A maintext CODE >395:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-5F maintext CODE >397:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-66 maintext CODE >397:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-6A maintext CODE >399:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-6C maintext CODE >401:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-6D maintext CODE >402:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-6E maintext CODE >403:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-6F maintext CODE >405:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-70 maintext CODE >406:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-71 maintext CODE >408:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-76 maintext CODE >410:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-79 maintext CODE >411:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7A maintext CODE >412:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7B maintext CODE >413:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7D maintext CODE >415:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-7E maintext CODE >417:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-83 maintext CODE >415:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-87 maintext CODE >415:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-8B maintext CODE >420:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-91 maintext CODE >423:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-93 maintext CODE >424:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-95 maintext CODE >426:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-97 maintext CODE >427:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-99 maintext CODE >428:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-9B maintext CODE >430:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-A0 maintext CODE >431:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-AB maintext CODE >432:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-B6 maintext CODE >433:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-C1 maintext CODE >434:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-CC maintext CODE >435:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-CD maintext CODE >438:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-D3 maintext CODE >446:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-E3 maintext CODE >448:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-E9 maintext CODE >449:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-EA maintext CODE >454:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-F5 maintext CODE >456:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-FB maintext CODE >462:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-108 maintext CODE >464:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-10E maintext CODE >466:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-113 maintext CODE >473:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-126 maintext CODE >475:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-12C maintext CODE >477:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-133 maintext CODE >479:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-135 maintext CODE >486:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-145 maintext CODE >488:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-14B maintext CODE >490:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-14D maintext CODE >491:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-14E maintext CODE >492:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-14F maintext CODE >493:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-155 maintext CODE >495:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-156 maintext CODE >496:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-158 maintext CODE >497:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-159 maintext CODE >498:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-15F maintext CODE >500:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-164 maintext CODE >507:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-177 maintext CODE >509:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-17D maintext CODE >511:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-17F maintext CODE >512:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-180 maintext CODE >513:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-181 maintext CODE >514:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-187 maintext CODE >516:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-188 maintext CODE >517:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-18A maintext CODE >518:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-18B maintext CODE >519:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-191 maintext CODE >521:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-196 maintext CODE >528:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1A3 maintext CODE >530:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1A8 maintext CODE >532:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1A9 maintext CODE >533:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1AA maintext CODE >534:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1B0 maintext CODE >536:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1B5 maintext CODE >538:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1B7 maintext CODE >540:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1B9 maintext CODE >540:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1BD maintext CODE >542:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1D1 maintext CODE >543:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1E5 maintext CODE >544:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1E5 maintext CODE >546:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-1FE maintext CODE >547:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-21B maintext CODE >548:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-225 maintext CODE >549:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-240 maintext CODE >550:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-25D maintext CODE >551:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-25E maintext CODE >552:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-25E maintext CODE >554:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-260 maintext CODE >555:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-262 maintext CODE >558:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-268 maintext CODE >560:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-269 maintext CODE >561:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-26B maintext CODE >562:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-26C maintext CODE >563:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-272 maintext CODE >565:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-277 maintext CODE >574:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-27E maintext CODE >576:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-27F maintext CODE >579:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-28A maintext CODE >581:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-28F maintext CODE >583:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-291 maintext CODE >586:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-2BB maintext CODE >588:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-2E7 maintext CODE >590:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-304 maintext CODE >593:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-30B maintext CODE >595:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-30D maintext CODE >597:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-312 maintext CODE >599:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-317 maintext CODE >600:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-322 maintext CODE >601:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-32E maintext CODE >607:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-355 maintext CODE >613:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-35A maintext CODE >615:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-35C maintext CODE >616:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-35D maintext CODE >617:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-362 maintext CODE >619:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-364 maintext CODE >620:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-366 maintext CODE >621:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-366 maintext CODE >624:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-371 maintext CODE >626:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-38A maintext CODE >627:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3A7 maintext CODE >628:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3B1 maintext CODE >629:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3CC maintext CODE >630:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3E9 maintext CODE >631:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3EA maintext CODE >634:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3EF maintext CODE >638:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3FB maintext CODE >640:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3FC maintext CODE >641:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3FD maintext CODE >642:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3FE maintext CODE >644:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-3FF maintext CODE >645:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-400 maintext CODE >646:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-401 maintext CODE >648:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-402 maintext CODE >650:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-407 maintext CODE >651:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-412 maintext CODE >652:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-41D maintext CODE >654:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
-B45 clrtext CODE >1576:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-B45 clrtext CODE >1577:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-B46 clrtext CODE >1578:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-B46 clrtext CODE >1579:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-B47 clrtext CODE >1580:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-B48 clrtext CODE >1581:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-B49 clrtext CODE >1582:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-B4A clrtext CODE >1583:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-B4B clrtext CODE >1584:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
-B4C clrtext CODE >1585:C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_1.s
+7E6 text1 CODE >322:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7E6 text1 CODE >324:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7E9 text1 CODE >325:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7EA text1 CODE >327:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7EB text1 CODE >328:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7EC text1 CODE >329:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7ED text1 CODE >330:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7EE text1 CODE >332:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7EF text1 CODE >333:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7F0 text1 CODE >335:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7F5 text1 CODE >337:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7F8 text1 CODE >338:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7FD text1 CODE >339:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+42 maintext CODE >371:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+42 maintext CODE >375:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+47 maintext CODE >377:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+4C maintext CODE >379:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+51 maintext CODE >382:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+51 maintext CODE >385:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+5A maintext CODE >390:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+5F maintext CODE >392:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+66 maintext CODE >392:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+6A maintext CODE >394:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+6C maintext CODE >396:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+6D maintext CODE >397:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+6E maintext CODE >398:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+6F maintext CODE >400:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+70 maintext CODE >401:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+71 maintext CODE >403:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+76 maintext CODE >405:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+79 maintext CODE >406:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7A maintext CODE >407:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7B maintext CODE >408:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7D maintext CODE >410:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+7E maintext CODE >412:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+83 maintext CODE >410:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+87 maintext CODE >410:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+8B maintext CODE >415:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+91 maintext CODE >418:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+93 maintext CODE >419:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+95 maintext CODE >421:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+97 maintext CODE >422:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+99 maintext CODE >423:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+9B maintext CODE >425:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+A0 maintext CODE >426:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+AB maintext CODE >427:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+B6 maintext CODE >428:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+C1 maintext CODE >429:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+CC maintext CODE >430:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+CD maintext CODE >433:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+D3 maintext CODE >441:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+E3 maintext CODE >443:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+E9 maintext CODE >444:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+EA maintext CODE >449:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+F5 maintext CODE >451:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+FB maintext CODE >457:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+108 maintext CODE >459:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+10E maintext CODE >461:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+113 maintext CODE >468:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+126 maintext CODE >470:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+12C maintext CODE >472:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+133 maintext CODE >474:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+135 maintext CODE >481:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+145 maintext CODE >483:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+14B maintext CODE >485:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+14D maintext CODE >486:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+14E maintext CODE >487:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+14F maintext CODE >488:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+155 maintext CODE >490:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+156 maintext CODE >491:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+158 maintext CODE >492:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+159 maintext CODE >493:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+15F maintext CODE >495:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+164 maintext CODE >502:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+177 maintext CODE >504:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+17D maintext CODE >506:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+17F maintext CODE >507:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+180 maintext CODE >508:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+181 maintext CODE >509:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+187 maintext CODE >511:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+188 maintext CODE >512:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+18A maintext CODE >513:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+18B maintext CODE >514:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+191 maintext CODE >516:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+196 maintext CODE >523:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1A3 maintext CODE >525:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1A8 maintext CODE >527:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1A9 maintext CODE >528:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1AA maintext CODE >529:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1B0 maintext CODE >531:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1B5 maintext CODE >533:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1B7 maintext CODE >535:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1B9 maintext CODE >535:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1BD maintext CODE >537:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1D1 maintext CODE >538:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1E5 maintext CODE >539:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1E5 maintext CODE >541:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+1FE maintext CODE >542:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+21B maintext CODE >543:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+225 maintext CODE >544:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+240 maintext CODE >545:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+25D maintext CODE >546:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+25E maintext CODE >547:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+25E maintext CODE >549:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+260 maintext CODE >550:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+262 maintext CODE >553:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+268 maintext CODE >555:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+269 maintext CODE >556:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+26B maintext CODE >557:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+26C maintext CODE >558:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+272 maintext CODE >560:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+277 maintext CODE >569:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+27E maintext CODE >571:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+27F maintext CODE >574:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+28A maintext CODE >576:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+28F maintext CODE >578:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+291 maintext CODE >581:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+2BB maintext CODE >582:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+2E7 maintext CODE >583:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+304 maintext CODE >585:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+30B maintext CODE >587:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+30D maintext CODE >589:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+312 maintext CODE >591:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+317 maintext CODE >592:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+322 maintext CODE >593:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+32E maintext CODE >599:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+355 maintext CODE >601:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+35A maintext CODE >603:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+35C maintext CODE >604:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+35D maintext CODE >605:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+362 maintext CODE >607:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+364 maintext CODE >608:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+366 maintext CODE >609:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+366 maintext CODE >612:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+371 maintext CODE >614:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+38A maintext CODE >615:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3A7 maintext CODE >616:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3B1 maintext CODE >617:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3CC maintext CODE >618:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3E9 maintext CODE >619:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3EA maintext CODE >622:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3EF maintext CODE >626:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3FB maintext CODE >628:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3FC maintext CODE >629:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3FD maintext CODE >630:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3FE maintext CODE >632:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+3FF maintext CODE >633:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+400 maintext CODE >634:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+401 maintext CODE >636:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+402 maintext CODE >638:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+407 maintext CODE >639:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+412 maintext CODE >640:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+41D maintext CODE >642:D:\Emertxe Projects\MC Projects\Microwave Oven\main.c
+B45 clrtext CODE >1578:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+B45 clrtext CODE >1579:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+B46 clrtext CODE >1580:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+B46 clrtext CODE >1581:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+B47 clrtext CODE >1582:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+B48 clrtext CODE >1583:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+B49 clrtext CODE >1584:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+B4A clrtext CODE >1585:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+B4B clrtext CODE >1586:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
+B4C clrtext CODE >1587:C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -757,15 +757,16 @@ __L__absolute__ 0 0 ABS 0 __absolute__ -
 __Lstringtext 0 0 ABS 0 stringtext -
 main@i 3A 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 __Hstrings 0 0 ABS 0 strings -
+_PEIE 5E 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
 _TMR2 11 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+___sp 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
 _main 84 0 CODE 0 maintext dist/default/production\Microwave_Oven_Project.X.production.o
 _mode 4F 0 BANK0 1 bssBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
-___stack_lo 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+___stack_hi 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
+___stack_lo 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
 __end_of_reset_time_entry 1794 0 CODE 0 text5 dist/default/production\Microwave_Oven_Project.X.production.o
-start 18 0 CODE 0 init C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+start 18 0 CODE 0 init C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 _stop_and_return_to_menu FCC 0 CODE 0 text1 dist/default/production\Microwave_Oven_Project.X.production.o
 set_temperature@key 36 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
@@ -778,12 +779,12 @@ __Hpowerup 0 0 CODE 0 powerup -
 ___awmod@sign 77 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
 __end_of_display_cooking_time ED8 0 CODE 0 text18 dist/default/production\Microwave_Oven_Project.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 ___bmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 __end_of_init_matrix_keypad 16D0 0 CODE 0 text15 dist/default/production\Microwave_Oven_Project.X.production.o
@@ -794,7 +795,7 @@ __Hclrtext 0 0 ABS 0 clrtext -
 reset_time_entry@i 72 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 __pidataCOMMON FFC 0 CODE 0 idataCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 ___wmul@multiplicand 74 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
-_set_time$221 2C 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
+_set_time$127 2C 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 ___awdiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 _scan_keypad C8A 0 CODE 0 text12 dist/default/production\Microwave_Oven_Project.X.production.o
 __LdataCOMMON 0 0 ABS 0 dataCOMMON -
@@ -807,8 +808,8 @@ ___bmul@multiplier 74 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_
 ___awdiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 __end_of___awdiv 1C56 0 CODE 0 text22 dist/default/production\Microwave_Oven_Project.X.production.o
 __end_of___awmod 1AC6 0 CODE 0 text21 dist/default/production\Microwave_Oven_Project.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
-___stacklo 0 0 ABS 0 - C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+___stackhi 0 0 ABS 0 - C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
+___stacklo 0 0 ABS 0 - C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
 _init_config 16D0 0 CODE 0 text13 dist/default/production\Microwave_Oven_Project.X.production.o
 __LidataCOMMON 0 0 ABS 0 idataCOMMON -
 _init_display_controller 1AC6 0 CODE 0 text17 dist/default/production\Microwave_Oven_Project.X.production.o
@@ -818,10 +819,12 @@ _temp_digit_count 46 0 BANK0 1 bssBANK0 dist/default/production\Microwave_Oven_P
 _blink_visible 55 0 BANK0 1 dataBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 clear_ram0 168A 0 CODE 0 clrtext dist/default/production\Microwave_Oven_Project.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
+_TMR2IE 461 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
+_TMR2IF 61 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
 _TRISE1 449 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
 _TRISE2 44A 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
 _conv_state 45 0 BANK0 1 bssBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+___int_sp 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -849,7 +852,6 @@ _clcd_write 19A8 0 CODE 0 text20 dist/default/production\Microwave_Oven_Project.
 startup_animation@i 2C 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 read_matrix_keypad@mode 74 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 read_matrix_keypad@once 7B 0 COMMON 1 dataCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
-_INTCONbits B 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hheap 0 0 HEAP 7 heap -
@@ -876,6 +878,7 @@ ___wmul 17DA 0 CODE 0 text10 dist/default/production\Microwave_Oven_Project.X.pr
 set_temperature@i 34 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GIE 5F 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
 _PR2 92 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
 _RB0 30 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
 _RB1 31 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
@@ -894,7 +897,7 @@ saved_w 7E 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production
 clcd_write@byte 75 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 clcd_write@mode 72 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 _digits 3C 0 BANK0 1 bssBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
-set_temperature@i_245 35 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
+set_temperature@i_151 35 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 __HidataCOMMON 0 0 ABS 0 idataCOMMON -
 __end_of_isr 19A8 0 CODE 0 text23 dist/default/production\Microwave_Oven_Project.X.production.o
 _set_temperature 85E 0 CODE 0 text7 dist/default/production\Microwave_Oven_Project.X.production.o
@@ -902,7 +905,7 @@ _display_cooking_time DE2 0 CODE 0 text18 dist/default/production\Microwave_Oven
 __Lintentry 8 0 CODE 0 intentry -
 __stringtab 1000 0 STRING 0 strings dist/default/production\Microwave_Oven_Project.X.production.o
 read_matrix_keypad@key 75 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
 set_temperature@entered_temp 32 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 __pdataBANK0 52 0 BANK0 1 dataBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 _temp_blink_visible 53 0 BANK0 1 dataBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
@@ -916,7 +919,6 @@ __end_of_clcd_write 1A14 0 CODE 0 text20 dist/default/production\Microwave_Oven_
 set_time@position 2E 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 _timer_ticks 7A 0 COMMON 1 bssCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 ___awmod@counter 76 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
-_PIE1bits 8C 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
 _last_temp_digit_count 52 0 BANK0 1 dataBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 __end_of_init_clcd 16B0 0 CODE 0 text16 dist/default/production\Microwave_Oven_Project.X.production.o
 __end_of_scan_keypad DE2 0 CODE 0 text12 dist/default/production\Microwave_Oven_Project.X.production.o
@@ -955,7 +957,6 @@ __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
 __pbssCOMMON 79 0 COMMON 1 bssCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
-_PIR1bits C 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
 __Lend_init 18 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __end_of_startup_animation FCC 0 CODE 0 text3 dist/default/production\Microwave_Oven_Project.X.production.o
@@ -993,8 +994,8 @@ _digit_count 4E 0 BANK0 1 bssBANK0 dist/default/production\Microwave_Oven_Projec
 _timer_1s_flag 51 0 BANK0 1 bssBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
 _time_set 4D 0 BANK0 1 bssBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
-___heap_lo 0 0 ABS 0 - C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+___heap_hi 0 0 ABS 0 - C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
+___heap_lo 0 0 ABS 0 - C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
 __end_of_init_timer2 1766 0 CODE 0 text14 dist/default/production\Microwave_Oven_Project.X.production.o
 clcd_putch@addr 28 0 BANK0 1 cstackBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 clcd_putch@data 78 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
@@ -1033,8 +1034,8 @@ __pstrings 1000 0 STRING 0 strings dist/default/production\Microwave_Oven_Projec
 _countdown_paused 49 0 BANK0 1 bssBANK0 dist/default/production\Microwave_Oven_Project.X.production.o
 ___wmul@product 76 0 COMMON 1 cstackCOMMON dist/default/production\Microwave_Oven_Project.X.production.o
 ttemp0a 7F 0 ABS 0 - dist/default/production\Microwave_Oven_Project.X.production.o
-___int_stack_hi 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
-___int_stack_lo 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.

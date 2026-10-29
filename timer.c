@@ -14,14 +14,14 @@ void init_timer2(void)
     TMR2 = 0;
 
     /* Clear pending interrupt flag */
-    PIR1bits.TMR2IF = 0;
+    TMR2IF = 0;
 
     /* Enable Timer2 interrupt */
-    PIE1bits.TMR2IE = 1;
+    TMR2IE = 1;
 
     /* Enable peripheral and global interrupts */
-    INTCONbits.PEIE = 1;
-    INTCONbits.GIE = 1;
+    PEIE = 1;
+    GIE = 1;
 
     /*
      * TOUTPS = 1:10

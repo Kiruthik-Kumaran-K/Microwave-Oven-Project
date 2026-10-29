@@ -6,10 +6,10 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v4.00\pic\dat\20260614213421_en.msgs \
   -cn -h+dist/default/production\Microwave_Oven_Project.X.production.sym \
   --cmf=dist/default/production\Microwave_Oven_Project.X.production.cmf -z \
-  -Q16F877 -oC:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_3.o \
+  -Q16F877 -oC:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/Microwave_Oven_Project.X.production.map \
-  --md=C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_0.dat -E1 \
+  --md=C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh \
   -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 \
   -ACOMMON=070h-07Fh -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh \
@@ -22,7 +22,7 @@ Linker command line:
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry=04h,sivt,init,end_init -ppowerup=CODE \
   -pcinit=CODE -pfunctab=ENTRY -k \
-  C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o \
+  C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o \
   dist/default/production\Microwave_Oven_Project.X.production.o 
 
 Object code version is 3.11
@@ -32,7 +32,7 @@ Machine type is 16F877
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\kirut\AppData\Local\Temp\xcAsqb8.0\driver_tmp_10.o
+C:\Users\kirut\AppData\Local\Temp\xcAsbmo.0\driver_tmp_10.o
                 end_init                              C        C        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             2007     2007        1        0       4
@@ -236,9 +236,8 @@ UNUSED ADDRESS RANGES
 ?___awdiv                        cstackCOMMON 0072
 ?___awmod                        cstackBANK0  0024
 ?___wmul                         cstackCOMMON 0072
-_INTCONbits                      (abs)        000B
-_PIE1bits                        (abs)        008C
-_PIR1bits                        (abs)        000C
+_GIE                             (abs)        005F
+_PEIE                            (abs)        005E
 _PORTD                           (abs)        0008
 _PR2                             (abs)        0092
 _RB0                             (abs)        0030
@@ -252,6 +251,8 @@ _RE1                             (abs)        0049
 _RE2                             (abs)        004A
 _T2CON                           (abs)        0012
 _TMR2                            (abs)        0011
+_TMR2IE                          (abs)        0461
+_TMR2IF                          (abs)        0061
 _TRISB                           (abs)        0086
 _TRISD                           (abs)        0088
 _TRISE1                          (abs)        0449
@@ -475,7 +476,7 @@ _scan_keypad                     text12       0645
 _seconds                         bssBANK0     004B
 _set_temperature                 text7        042F
 _set_time                        text4        0E2B
-_set_time$221                    cstackBANK0  002C
+_set_time$127                    cstackBANK0  002C
 _startup_animation               text3        076C
 _stop_and_return_to_menu         text1        07E6
 _temp_blink_visible              dataBANK0    0053
@@ -515,7 +516,7 @@ saved_w                          (abs)        007E
 scan_keypad@i                    cstackCOMMON 0072
 set_temperature@entered_temp     cstackBANK0  0032
 set_temperature@i                cstackBANK0  0034
-set_temperature@i_245            cstackBANK0  0035
+set_temperature@i_151            cstackBANK0  0035
 set_temperature@key              cstackBANK0  0036
 set_temperature@position         cstackBANK0  0031
 set_time@entered_seconds         cstackBANK0  002F

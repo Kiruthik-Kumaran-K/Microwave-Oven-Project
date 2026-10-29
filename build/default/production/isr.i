@@ -1736,9 +1736,9 @@ static unsigned char blink_state = 0;
 
 void __attribute__((picinterrupt(("")))) isr(void)
 {
-    if (PIR1bits.TMR2IF && PIE1bits.TMR2IE)
+    if (TMR2IF && TMR2IE)
     {
-        PIR1bits.TMR2IF = 0;
+        TMR2IF = 0;
 
         if (++timer_ticks >= 125)
         {

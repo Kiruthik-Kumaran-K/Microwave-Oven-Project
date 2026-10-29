@@ -1955,8 +1955,7 @@ static void set_temperature(unsigned char key)
 
             if (temp_blink_visible)
             {
-                clcd_putch(temp_digits[temp_digit_count] + '0',
-                           (0xC0 + position));
+                clcd_putch(temp_digits[temp_digit_count] + '0', (0xC0 + position));
             }
             else
             {
@@ -1992,10 +1991,7 @@ static void set_temperature(unsigned char key)
     }
     else if (key == '#' && temp_digit_count > 0)
     {
-        unsigned int entered_temp =
-            temp_digits[0] * 100 +
-            temp_digits[1] * 10 +
-            temp_digits[2];
+        unsigned int entered_temp = temp_digits[0] * 100 + temp_digits[1] * 10 + temp_digits[2];
 
         if (entered_temp >= 25 && entered_temp <= 180)
         {
@@ -2013,8 +2009,7 @@ static void set_temperature(unsigned char key)
             clcd_print("TEMP: ", (0xC0 + 0));
 
             clcd_putch(temperature / 100 + '0', (0xC0 + 6));
-            clcd_putch((temperature / 10) % 10 + '0',
-                       (0xC0 + 7));
+            clcd_putch((temperature / 10) % 10 + '0', (0xC0 + 7));
             clcd_putch(temperature % 10 + '0', (0xC0 + 8));
 
             clcd_print("TIME LEFT:", (0x90 + (0)));
@@ -2319,12 +2314,9 @@ void main(void)
                     preheat_seconds--;
                 }
 
-                clcd_putch((preheat_seconds / 100) % 10 + '0',
-                           (0x90 + (11)));
-                clcd_putch((preheat_seconds / 10) % 10 + '0',
-                           (0x90 + (12)));
-                clcd_putch(preheat_seconds % 10 + '0',
-                           (0x90 + (13)));
+                clcd_putch((preheat_seconds / 100) % 10 + '0', (0x90 + (11)));
+                clcd_putch((preheat_seconds / 10) % 10 + '0', (0x90 + (12)));
+                clcd_putch(preheat_seconds % 10 + '0', (0x90 + (13)));
 
                 if (preheat_seconds == 0)
                 {
@@ -2340,11 +2332,7 @@ void main(void)
 
 
 
-            else if (countdown_running &&
-                     ((mode == 1) ||
-                      (mode == 2) ||
-                      (mode == 3 && conv_state == 3) ||
-                      (mode == 4 && quick_start_active)))
+            else if (countdown_running && ((mode == 1) || (mode == 2) || (mode == 3 && conv_state == 3) || (mode == 4 && quick_start_active)))
             {
                 if (seconds > 0)
                 {

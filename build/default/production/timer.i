@@ -1740,14 +1740,14 @@ void init_timer2(void)
     TMR2 = 0;
 
 
-    PIR1bits.TMR2IF = 0;
+    TMR2IF = 0;
 
 
-    PIE1bits.TMR2IE = 1;
+    TMR2IE = 1;
 
 
-    INTCONbits.PEIE = 1;
-    INTCONbits.GIE = 1;
+    PEIE = 1;
+    GIE = 1;
 
 
 

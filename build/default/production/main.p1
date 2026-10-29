@@ -725,1107 +725,1107 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 212:             {
 {
 "213
-[; ;main.c: 213:                 clcd_putch(temp_digits[temp_digit_count] + '0',
+[; ;main.c: 213:                 clcd_putch(temp_digits[temp_digit_count] + '0', (0xC0 + position));
 [e = _position -> + -> 6 `i -> _temp_digit_count `i `uc ]
 "215
-[; ;main.c: 215:             }
+[; ;main.c: 215:             else
 [e $ ! != -> _blink_flag `i -> 0 `i 117  ]
 "216
-[; ;main.c: 216:             else
+[; ;main.c: 216:             {
 {
 "217
-[; ;main.c: 217:             {
+[; ;main.c: 217:                 clcd_putch(' ', (0xC0 + position));
 [e = _blink_flag -> -> 0 `i `uc ]
 "218
-[; ;main.c: 218:                 clcd_putch(' ', (0xC0 + position));
+[; ;main.c: 218:             }
 [e = _temp_blink_visible -> -> ! != -> _temp_blink_visible `i -> 0 `i `i `uc ]
 "220
-[; ;main.c: 220:         }
+[; ;main.c: 220:     }
 [e $ ! != -> _temp_blink_visible `i -> 0 `i 118  ]
 "221
-[; ;main.c: 221:     }
+[; ;main.c: 221: 
 {
 "222
-[; ;main.c: 222: 
+[; ;main.c: 222:     if (key == 0xFF)
 [e ( _clcd_putch (2 , -> + -> *U + &U _temp_digits * -> _temp_digit_count `ux -> -> # *U &U _temp_digits `ui `ux `ui -> 48 `ui `uc -> + -> 192 `i -> _position `i `uc ]
-"224
-[; ;main.c: 224:         return;
+"223
+[; ;main.c: 223:         return;
 }
 [e $U 119  ]
+"224
+[; ;main.c: 224: 
+[e :U 118 ]
 "225
 [; ;main.c: 225: 
-[e :U 118 ]
-"226
-[; ;main.c: 226: 
 {
-"227
-[; ;main.c: 227:     if (key <= 9 && temp_digit_count < 3)
+"226
+[; ;main.c: 226:     if (key <= 9 && temp_digit_count < 3)
 [e ( _clcd_putch (2 , -> -> 32 `ui `uc -> + -> 192 `i -> _position `i `uc ]
-"228
-[; ;main.c: 228:     {
+"227
+[; ;main.c: 227:     {
 }
 [e :U 119 ]
-"229
-[; ;main.c: 229:         temp_digits[temp_digit_count] = key;
+"228
+[; ;main.c: 228:         temp_digits[temp_digit_count] = key;
 }
 [e :U 117 ]
-"230
-[; ;main.c: 230:         temp_digit_count++;
+"229
+[; ;main.c: 229:         temp_digit_count++;
 }
 [e :U 116 ]
-"232
-[; ;main.c: 232:         last_temp_digit_count = 255;
+"231
+[; ;main.c: 231:         last_temp_digit_count = 255;
 [e $ ! == -> _key `i -> 255 `i 120  ]
-"233
-[; ;main.c: 233:         temp_blink_visible = 1;
+"232
+[; ;main.c: 232:         temp_blink_visible = 1;
 [e $UE 114  ]
 [e :U 120 ]
-"236
-[; ;main.c: 236:     {
+"235
+[; ;main.c: 235:     {
 [e $ ! && <= -> _key `i -> 9 `i < -> _temp_digit_count `i -> 3 `i 121  ]
-"237
-[; ;main.c: 237: 
+"236
+[; ;main.c: 236: 
 {
-"238
-[; ;main.c: 238:         temp_digit_count = 0;
+"237
+[; ;main.c: 237:         temp_digit_count = 0;
 [e = *U + &U _temp_digits * -> _temp_digit_count `ux -> -> # *U &U _temp_digits `ui `ux _key ]
-"239
-[; ;main.c: 239: 
+"238
+[; ;main.c: 238: 
 [e ++ _temp_digit_count -> -> 1 `i `uc ]
-"241
-[; ;main.c: 241:         {
+"240
+[; ;main.c: 240:         {
 [e = _last_temp_digit_count -> -> 255 `i `uc ]
-"242
-[; ;main.c: 242:             temp_digits[i] = 0;
+"241
+[; ;main.c: 241:             temp_digits[i] = 0;
 [e = _temp_blink_visible -> -> 1 `i `uc ]
-"243
-[; ;main.c: 243:         }
+"242
+[; ;main.c: 242:         }
 }
 [e $U 122  ]
-"244
-[; ;main.c: 244: 
+"243
+[; ;main.c: 243: 
 [e :U 121 ]
 [e $ ! == -> _key `ui -> 42 `ui 123  ]
-"245
-[; ;main.c: 245:         last_temp_digit_count = 255;
+"244
+[; ;main.c: 244:         last_temp_digit_count = 255;
 {
-"247
-[; ;main.c: 247:     }
+"246
+[; ;main.c: 246:     }
 [e = _temp_digit_count -> -> 0 `i `uc ]
-"249
-[; ;main.c: 249:     {
+"248
+[; ;main.c: 248:     {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $ < -> _i `i -> 3 `i 124  ]
 [e $U 125  ]
 [e :U 124 ]
-"250
-[; ;main.c: 250:         unsigned int entered_temp =
-{
-"251
-[; ;main.c: 251:             temp_digits[0] * 100 +
-[e = *U + &U _temp_digits * -> _i `ux -> -> # *U &U _temp_digits `ui `ux -> -> 0 `i `uc ]
-"252
-[; ;main.c: 252:             temp_digits[1] * 10 +
-}
 "249
-[; ;main.c: 249:     {
+[; ;main.c: 249:         unsigned int entered_temp = temp_digits[0] * 100 + temp_digits[1] * 10 + temp_digits[2];
+{
+"250
+[; ;main.c: 250: 
+[e = *U + &U _temp_digits * -> _i `ux -> -> # *U &U _temp_digits `ui `ux -> -> 0 `i `uc ]
+"251
+[; ;main.c: 251:         if (entered_temp >= 25 && entered_temp <= 180)
+}
+"248
+[; ;main.c: 248:     {
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 3 `i 124  ]
 [e :U 125 ]
-"252
-[; ;main.c: 252:             temp_digits[1] * 10 +
+"251
+[; ;main.c: 251:         if (entered_temp >= 25 && entered_temp <= 180)
 }
+"253
+[; ;main.c: 253:             temperature = entered_temp;
+[e = _last_temp_digit_count -> -> 255 `i `uc ]
 "254
 [; ;main.c: 254: 
-[e = _last_temp_digit_count -> -> 255 `i `uc ]
-"255
-[; ;main.c: 255:         if (entered_temp >= 25 && entered_temp <= 180)
 [e = _temp_blink_visible -> -> 1 `i `uc ]
-"256
-[; ;main.c: 256:         {
+"255
+[; ;main.c: 255:             conv_state = 1;
 }
 [e $U 127  ]
-"257
-[; ;main.c: 257:             temperature = entered_temp;
+"256
+[; ;main.c: 256:             preheat_seconds = 60;
 [e :U 123 ]
 [e $ ! && == -> _key `ui -> 35 `ui > -> _temp_digit_count `i -> 0 `i 128  ]
-"258
-[; ;main.c: 258: 
+"257
+[; ;main.c: 257: 
 {
-"259
-[; ;main.c: 259:             conv_state = 1;
+"258
+[; ;main.c: 258:             countdown_running = 0;
 [v _entered_temp `ui ~T0 @X0 1 a ]
 [e = _entered_temp -> + + * -> *U + &U _temp_digits * -> -> -> 0 `i `ui `ux -> -> # *U &U _temp_digits `ui `ux `i -> 100 `i * -> *U + &U _temp_digits * -> -> -> 1 `i `ui `ux -> -> # *U &U _temp_digits `ui `ux `i -> 10 `i -> *U + &U _temp_digits * -> -> -> 2 `i `ui `ux -> -> # *U &U _temp_digits `ui `ux `i `ui ]
-"264
-[; ;main.c: 264: 
+"260
+[; ;main.c: 260: 
 [e $ ! && >= _entered_temp -> -> 25 `i `ui <= _entered_temp -> -> 180 `i `ui 129  ]
-"265
-[; ;main.c: 265:             clcd_clear();
+"261
+[; ;main.c: 261:             clcd_clear();
 {
-"266
-[; ;main.c: 266: 
+"262
+[; ;main.c: 262: 
 [e = _temperature -> _entered_temp `uc ]
-"268
-[; ;main.c: 268:             clcd_print("TEMP: ", (0xC0 + 0));
+"264
+[; ;main.c: 264:             clcd_print("TEMP: ", (0xC0 + 0));
 [e = _conv_state -> -> 1 `i `uc ]
-"269
-[; ;main.c: 269: 
+"265
+[; ;main.c: 265: 
 [e = _preheat_seconds -> -> 60 `i `uc ]
-"271
-[; ;main.c: 271:             clcd_putch((temperature / 10) % 10 + '0',
+"267
+[; ;main.c: 267:             clcd_putch((temperature / 10) % 10 + '0', (0xC0 + 7));
 [e = _countdown_running -> -> 0 `i `uc ]
-"272
-[; ;main.c: 272:                        (0xC0 + 7));
+"268
+[; ;main.c: 268:             clcd_putch(temperature % 10 + '0', (0xC0 + 8));
 [e = _countdown_paused -> -> 0 `i `uc ]
-"274
-[; ;main.c: 274: 
+"270
+[; ;main.c: 270:             clcd_print("TIME LEFT:", (0x90 + (0)));
 [e ( _clcd_clear ..  ]
-"276
-[; ;main.c: 276:             clcd_putch('0', (0x90 + (11)));
+"272
+[; ;main.c: 272:             clcd_putch('6', (0x90 + (12)));
 [e ( _clcd_print (2 , :s 16C -> + -> 128 `i -> 0 `i `uc ]
-"277
-[; ;main.c: 277:             clcd_putch('6', (0x90 + (12)));
+"273
+[; ;main.c: 273:             clcd_putch('0', (0x90 + (13)));
 [e ( _clcd_print (2 , :s 17C -> + -> 192 `i -> 0 `i `uc ]
-"279
-[; ;main.c: 279:             clcd_print("6:Stop", (0xD0 + (0)));
+"275
+[; ;main.c: 275:         }
 [e ( _clcd_putch (2 , -> + -> / -> _temperature `i -> 100 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 6 `i `uc ]
-"280
-[; ;main.c: 280:         }
+"276
+[; ;main.c: 276:         else
 [e ( _clcd_putch (2 , -> + -> % / -> _temperature `i -> 10 `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 7 `i `uc ]
-"282
-[; ;main.c: 282:         {
+"277
+[; ;main.c: 277:         {
 [e ( _clcd_putch (2 , -> + -> % -> _temperature `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 8 `i `uc ]
-"284
-[; ;main.c: 284:             clcd_print("INVALID TEMP", (0x80 + 2));
+"279
+[; ;main.c: 279:             clcd_print("INVALID TEMP", (0x80 + 2));
 [e ( _clcd_print (2 , :s 18C -> + -> 144 `i -> 0 `i `uc ]
-"285
-[; ;main.c: 285:             clcd_print("Range: 25-180 C", (0xC0 + 0));
+"280
+[; ;main.c: 280:             clcd_print("Range: 25-180 C", (0xC0 + 0));
 [e ( _clcd_putch (2 , -> -> 48 `ui `uc -> + -> 144 `i -> 11 `i `uc ]
-"286
-[; ;main.c: 286: 
+"281
+[; ;main.c: 281: 
 [e ( _clcd_putch (2 , -> -> 54 `ui `uc -> + -> 144 `i -> 12 `i `uc ]
-"287
-[; ;main.c: 287:             _delay((unsigned long)((1000)*(20000000/4000.0)));
+"282
+[; ;main.c: 282:             _delay((unsigned long)((1000)*(20000000/4000.0)));
 [e ( _clcd_putch (2 , -> -> 48 `ui `uc -> + -> 144 `i -> 13 `i `uc ]
-"288
-[; ;main.c: 288: 
+"283
+[; ;main.c: 283: 
 [e ( _clcd_print (2 , :s 19C -> + -> 208 `i -> 0 `i `uc ]
-"289
-[; ;main.c: 289:             temp_digit_count = 0;
+"284
+[; ;main.c: 284:             temp_digit_count = 0;
 }
 [e $U 130  ]
-"290
-[; ;main.c: 290: 
+"285
+[; ;main.c: 285: 
 [e :U 129 ]
-"291
-[; ;main.c: 291:             for (unsigned char i = 0; i < 3; i++)
+"286
+[; ;main.c: 286:             for (unsigned char i = 0; i < 3; i++)
 {
-"292
-[; ;main.c: 292:             {
+"287
+[; ;main.c: 287:             {
 [e ( _clcd_clear ..  ]
-"293
-[; ;main.c: 293:                 temp_digits[i] = 0;
+"288
+[; ;main.c: 288:                 temp_digits[i] = 0;
 [e ( _clcd_print (2 , :s 20C -> + -> 128 `i -> 2 `i `uc ]
-"294
-[; ;main.c: 294:             }
+"289
+[; ;main.c: 289:             }
 [e ( _clcd_print (2 , :s 21C -> + -> 192 `i -> 0 `i `uc ]
-"296
-[; ;main.c: 296:             last_temp_digit_count = 255;
+"291
+[; ;main.c: 291:             last_temp_digit_count = 255;
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"298
-[; ;main.c: 298:             clcd_clear();
+"293
+[; ;main.c: 293:             clcd_clear();
 [e = _temp_digit_count -> -> 0 `i `uc ]
-"300
-[; ;main.c: 300:     }
+"295
+[; ;main.c: 295:     }
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $ < -> _i `i -> 3 `i 131  ]
 [e $U 132  ]
 [e :U 131 ]
-"301
-[; ;main.c: 301: }
+"296
+[; ;main.c: 296: }
 {
-"302
-[; ;main.c: 302: 
+"297
+[; ;main.c: 297: 
 [e = *U + &U _temp_digits * -> _i `ux -> -> # *U &U _temp_digits `ui `ux -> -> 0 `i `uc ]
-"303
-[; ;main.c: 303: 
+"298
+[; ;main.c: 298: 
 }
-"300
-[; ;main.c: 300:     }
+"295
+[; ;main.c: 295:     }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 3 `i 131  ]
 [e :U 132 ]
-"303
-[; ;main.c: 303: 
+"298
+[; ;main.c: 298: 
 }
-"305
-[; ;main.c: 305: 
+"300
+[; ;main.c: 300: 
 [e = _last_temp_digit_count -> -> 255 `i `uc ]
-"306
-[; ;main.c: 306: static void display_cooking_time(void)
+"301
+[; ;main.c: 301: static void display_cooking_time(void)
 [e = _temp_blink_visible -> -> 1 `i `uc ]
-"307
-[; ;main.c: 307: {
+"302
+[; ;main.c: 302: {
 [e ( _clcd_clear ..  ]
-"308
-[; ;main.c: 308:     clcd_putch(minutes / 10 + '0', (0x80 + 7));
+"303
+[; ;main.c: 303:     clcd_putch(minutes / 10 + '0', (0x80 + 7));
 }
 [e :U 130 ]
-"309
-[; ;main.c: 309:     clcd_putch(minutes % 10 + '0', (0x80 + 8));
+"304
+[; ;main.c: 304:     clcd_putch(minutes % 10 + '0', (0x80 + 8));
 }
 [e :U 128 ]
 [e :U 127 ]
 [e :U 122 ]
-"310
-[; ;main.c: 310:     clcd_putch(':', (0x80 + 9));
+"305
+[; ;main.c: 305:     clcd_putch(':', (0x80 + 9));
 [e :UE 114 ]
 }
-"315
-[; ;main.c: 315: 
+"310
+[; ;main.c: 310: 
 [v _display_cooking_time `(v ~T0 @X0 1 sf ]
-"316
-[; ;main.c: 316: 
+"311
+[; ;main.c: 311: 
 {
 [e :U _display_cooking_time ]
 [f ]
+"312
+[; ;main.c: 312: 
+[e ( _clcd_putch (2 , -> + -> / -> _minutes `i -> 10 `i `ui -> 48 `ui `uc -> + -> 128 `i -> 7 `i `uc ]
+"313
+[; ;main.c: 313: static void stop_and_return_to_menu(void)
+[e ( _clcd_putch (2 , -> + -> % -> _minutes `i -> 10 `i `ui -> 48 `ui `uc -> + -> 128 `i -> 8 `i `uc ]
+"314
+[; ;main.c: 314: {
+[e ( _clcd_putch (2 , -> -> 58 `ui `uc -> + -> 128 `i -> 9 `i `uc ]
+"315
+[; ;main.c: 315:     countdown_running = 0;
+[e ( _clcd_putch (2 , -> + -> / -> _seconds `i -> 10 `i `ui -> 48 `ui `uc -> + -> 128 `i -> 10 `i `uc ]
+"316
+[; ;main.c: 316:     countdown_paused = 0;
+[e ( _clcd_putch (2 , -> + -> % -> _seconds `i -> 10 `i `ui -> 48 `ui `uc -> + -> 128 `i -> 11 `i `uc ]
 "317
 [; ;main.c: 317: 
-[e ( _clcd_putch (2 , -> + -> / -> _minutes `i -> 10 `i `ui -> 48 `ui `uc -> + -> 128 `i -> 7 `i `uc ]
-"318
-[; ;main.c: 318: static void stop_and_return_to_menu(void)
-[e ( _clcd_putch (2 , -> + -> % -> _minutes `i -> 10 `i `ui -> 48 `ui `uc -> + -> 128 `i -> 8 `i `uc ]
-"319
-[; ;main.c: 319: {
-[e ( _clcd_putch (2 , -> -> 58 `ui `uc -> + -> 128 `i -> 9 `i `uc ]
-"320
-[; ;main.c: 320:     countdown_running = 0;
-[e ( _clcd_putch (2 , -> + -> / -> _seconds `i -> 10 `i `ui -> 48 `ui `uc -> + -> 128 `i -> 10 `i `uc ]
-"321
-[; ;main.c: 321:     countdown_paused = 0;
-[e ( _clcd_putch (2 , -> + -> % -> _seconds `i -> 10 `i `ui -> 48 `ui `uc -> + -> 128 `i -> 11 `i `uc ]
-"322
-[; ;main.c: 322: 
 [e :UE 134 ]
 }
-"327
-[; ;main.c: 327: 
+"322
+[; ;main.c: 322: 
 [v _stop_and_return_to_menu `(v ~T0 @X0 1 sf ]
-"328
-[; ;main.c: 328:     minutes = 0;
+"323
+[; ;main.c: 323:     minutes = 0;
 {
 [e :U _stop_and_return_to_menu ]
 [f ]
-"329
-[; ;main.c: 329:     seconds = 0;
+"324
+[; ;main.c: 324:     seconds = 0;
 [e = _countdown_running -> -> 0 `i `uc ]
-"330
-[; ;main.c: 330: 
+"325
+[; ;main.c: 325: 
 [e = _countdown_paused -> -> 0 `i `uc ]
+"327
+[; ;main.c: 327: 
+[e = _quick_start_active -> -> 0 `i `uc ]
+"328
+[; ;main.c: 328:     mode = 0;
+[e = _conv_state -> -> 0 `i `uc ]
+"329
+[; ;main.c: 329:     display_menu();
+[e = _temperature -> -> 0 `i `uc ]
+"330
+[; ;main.c: 330: }
+[e = _temp_digit_count -> -> 0 `i `uc ]
 "332
 [; ;main.c: 332: 
-[e = _quick_start_active -> -> 0 `i `uc ]
-"333
-[; ;main.c: 333:     mode = 0;
-[e = _conv_state -> -> 0 `i `uc ]
-"334
-[; ;main.c: 334:     display_menu();
-[e = _temperature -> -> 0 `i `uc ]
-"335
-[; ;main.c: 335: }
-[e = _temp_digit_count -> -> 0 `i `uc ]
-"337
-[; ;main.c: 337: 
 [e = _minutes -> -> 0 `i `uc ]
-"338
-[; ;main.c: 338: static void startup_animation(void)
+"333
+[; ;main.c: 333: static void startup_animation(void)
 [e = _seconds -> -> 0 `i `uc ]
-"340
-[; ;main.c: 340:     unsigned char i;
+"335
+[; ;main.c: 335:     unsigned char i;
 [e ( _reset_time_entry ..  ]
-"342
-[; ;main.c: 342:     clcd_clear();
+"337
+[; ;main.c: 337:     clcd_clear();
 [e = _mode -> -> 0 `i `uc ]
-"343
-[; ;main.c: 343: 
+"338
+[; ;main.c: 338: 
 [e ( _display_menu ..  ]
-"344
-[; ;main.c: 344: 
+"339
+[; ;main.c: 339: 
 [e :UE 135 ]
 }
-"347
-[; ;main.c: 347:         clcd_putch(0xFF, (0x80 + i));
+"342
+[; ;main.c: 342:         clcd_putch(0xFF, (0x80 + i));
 [v _startup_animation `(v ~T0 @X0 1 sf ]
-"348
-[; ;main.c: 348:         _delay((unsigned long)((60)*(20000000/4000.0)));
+"343
+[; ;main.c: 343:         _delay((unsigned long)((60)*(20000000/4000.0)));
 {
 [e :U _startup_animation ]
 [f ]
-"349
-[; ;main.c: 349:     }
+"344
+[; ;main.c: 344:     }
 [v _i `uc ~T0 @X0 1 a ]
-"351
-[; ;main.c: 351:     clcd_print("Powering ON", (0xC0 + 2));
+"346
+[; ;main.c: 346:     clcd_print("Powering ON", (0xC0 + 2));
 [e ( _clcd_clear ..  ]
-"354
-[; ;main.c: 354: 
+"349
+[; ;main.c: 349: 
 {
 [e = _i -> -> 0 `i `uc ]
 [e $ < -> _i `i -> 16 `i 137  ]
 [e $U 138  ]
 [e :U 137 ]
-"355
-[; ;main.c: 355:     for (i = 0; i < 16; i++)
+"350
+[; ;main.c: 350:     for (i = 0; i < 16; i++)
 {
-"356
-[; ;main.c: 356:     {
+"351
+[; ;main.c: 351:     {
 [e ( _clcd_putch (2 , -> -> 255 `i `uc -> + -> 128 `i -> _i `i `uc ]
-"357
-[; ;main.c: 357:         clcd_putch(0xFF, (0xD0 + (i)));
+"352
+[; ;main.c: 352:         clcd_putch(0xFF, (0xD0 + (i)));
 [e ( __delay (1 -> * -> -> 60 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"358
-[; ;main.c: 358:         _delay((unsigned long)((60)*(20000000/4000.0)));
+"353
+[; ;main.c: 353:         _delay((unsigned long)((60)*(20000000/4000.0)));
 }
-"354
-[; ;main.c: 354: 
+"349
+[; ;main.c: 349: 
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 16 `i 137  ]
 [e :U 138 ]
-"358
-[; ;main.c: 358:         _delay((unsigned long)((60)*(20000000/4000.0)));
+"353
+[; ;main.c: 353:         _delay((unsigned long)((60)*(20000000/4000.0)));
 }
-"360
-[; ;main.c: 360: 
+"355
+[; ;main.c: 355: 
 [e ( _clcd_print (2 , :s 22C -> + -> 192 `i -> 2 `i `uc ]
-"361
-[; ;main.c: 361:     _delay((unsigned long)((1000)*(20000000/4000.0)));
+"356
+[; ;main.c: 356:     _delay((unsigned long)((1000)*(20000000/4000.0)));
 [e ( _clcd_print (2 , :s 23C -> + -> 144 `i -> 1 `i `uc ]
-"364
-[; ;main.c: 364: }
+"359
+[; ;main.c: 359: }
 {
 [e = _i -> -> 0 `i `uc ]
 [e $ < -> _i `i -> 16 `i 140  ]
 [e $U 141  ]
 [e :U 140 ]
-"365
-[; ;main.c: 365: 
+"360
+[; ;main.c: 360: 
 {
-"366
-[; ;main.c: 366: 
+"361
+[; ;main.c: 361: 
 [e ( _clcd_putch (2 , -> -> 255 `i `uc -> + -> 208 `i -> _i `i `uc ]
-"367
-[; ;main.c: 367: void main(void)
+"362
+[; ;main.c: 362: void main(void)
 [e ( __delay (1 -> * -> -> 60 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"368
-[; ;main.c: 368: {
+"363
+[; ;main.c: 363: {
 }
-"364
-[; ;main.c: 364: }
+"359
+[; ;main.c: 359: }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 16 `i 140  ]
 [e :U 141 ]
-"368
-[; ;main.c: 368: {
+"363
+[; ;main.c: 363: {
 }
-"370
-[; ;main.c: 370: 
+"365
+[; ;main.c: 365: 
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"372
-[; ;main.c: 372: 
+"367
+[; ;main.c: 367: 
 [e ( _clcd_clear ..  ]
-"373
-[; ;main.c: 373:     startup_animation();
+"368
+[; ;main.c: 368:     startup_animation();
 [e :UE 136 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"376
-[; ;main.c: 376: 
+"371
+[; ;main.c: 371: 
 [v _main `(v ~T0 @X0 1 ef ]
-"377
-[; ;main.c: 377: 
+"372
+[; ;main.c: 372: 
 {
 [e :U _main ]
 [f ]
-"378
-[; ;main.c: 378:     while (1)
+"373
+[; ;main.c: 373:     while (1)
 [v _key `uc ~T0 @X0 1 a ]
-"380
-[; ;main.c: 380: 
+"375
+[; ;main.c: 375: 
 [e ( _init_config ..  ]
-"382
-[; ;main.c: 382: 
+"377
+[; ;main.c: 377: 
 [e ( _startup_animation ..  ]
-"384
-[; ;main.c: 384: 
+"379
+[; ;main.c: 379: 
 [e ( _display_menu ..  ]
-"387
-[; ;main.c: 387:         {
+"382
+[; ;main.c: 382:         {
 [e :U 145 ]
-"388
-[; ;main.c: 388:             if (key >= 1 && key <= 4)
+"383
+[; ;main.c: 383:             if (key >= 1 && key <= 4)
 {
-"390
-[; ;main.c: 390:                 mode = key;
+"385
+[; ;main.c: 385:                 mode = key;
 [e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
-"395
-[; ;main.c: 395: 
+"390
+[; ;main.c: 390: 
 [e $ ! == -> _mode `i -> 0 `i 147  ]
-"396
-[; ;main.c: 396:                 minutes = 0;
+"391
+[; ;main.c: 391:                 minutes = 0;
 {
-"397
-[; ;main.c: 397:                 seconds = 0;
+"392
+[; ;main.c: 392:                 seconds = 0;
 [e $ ! && >= -> _key `i -> 1 `i <= -> _key `i -> 4 `i 148  ]
-"398
-[; ;main.c: 398: 
+"393
+[; ;main.c: 393: 
 {
-"399
-[; ;main.c: 399:                 reset_time_entry();
+"394
+[; ;main.c: 394:                 reset_time_entry();
 [e = _mode _key ]
-"401
-[; ;main.c: 401:                 temperature = 0;
+"396
+[; ;main.c: 396:                 temperature = 0;
 [e = _countdown_running -> -> 0 `i `uc ]
-"402
-[; ;main.c: 402:                 temp_digit_count = 0;
+"397
+[; ;main.c: 397:                 temp_digit_count = 0;
 [e = _countdown_paused -> -> 0 `i `uc ]
-"403
-[; ;main.c: 403:                 conv_state = 0;
+"398
+[; ;main.c: 398:                 conv_state = 0;
 [e = _quick_start_active -> -> 0 `i `uc ]
+"400
+[; ;main.c: 400: 
+[e = _minutes -> -> 0 `i `uc ]
+"401
+[; ;main.c: 401:                 for (unsigned char i = 0; i < 3; i++)
+[e = _seconds -> -> 0 `i `uc ]
+"403
+[; ;main.c: 403:                     temp_digits[i] = 0;
+[e ( _reset_time_entry ..  ]
 "405
 [; ;main.c: 405: 
-[e = _minutes -> -> 0 `i `uc ]
-"406
-[; ;main.c: 406:                 for (unsigned char i = 0; i < 3; i++)
-[e = _seconds -> -> 0 `i `uc ]
-"408
-[; ;main.c: 408:                     temp_digits[i] = 0;
-[e ( _reset_time_entry ..  ]
-"410
-[; ;main.c: 410: 
 [e = _temperature -> -> 0 `i `uc ]
-"411
-[; ;main.c: 411:                 if (mode == 4)
+"406
+[; ;main.c: 406:                 if (mode == 4)
 [e = _temp_digit_count -> -> 0 `i `uc ]
-"412
-[; ;main.c: 412:                 {
+"407
+[; ;main.c: 407:                 {
 [e = _conv_state -> -> 0 `i `uc ]
-"413
-[; ;main.c: 413: 
+"408
+[; ;main.c: 408: 
 [e = _preheat_seconds -> -> 60 `i `uc ]
-"415
-[; ;main.c: 415:                     quick_start_just_started = 1;
+"410
+[; ;main.c: 410:                     quick_start_just_started = 1;
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $ < -> _i `i -> 3 `i 149  ]
 [e $U 150  ]
 [e :U 149 ]
-"416
-[; ;main.c: 416: 
+"411
+[; ;main.c: 411: 
 {
-"417
-[; ;main.c: 417:                     seconds = 30;
+"412
+[; ;main.c: 412:                     seconds = 30;
 [e = *U + &U _temp_digits * -> _i `ux -> -> # *U &U _temp_digits `ui `ux -> -> 0 `i `uc ]
-"418
-[; ;main.c: 418:                     countdown_running = 1;
+"413
+[; ;main.c: 413:                     countdown_running = 1;
 }
-"415
-[; ;main.c: 415:                     quick_start_just_started = 1;
+"410
+[; ;main.c: 410:                     quick_start_just_started = 1;
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 3 `i 149  ]
 [e :U 150 ]
-"418
-[; ;main.c: 418:                     countdown_running = 1;
+"413
+[; ;main.c: 413:                     countdown_running = 1;
 }
-"420
-[; ;main.c: 420: 
+"415
+[; ;main.c: 415: 
 [e $ ! == -> _mode `i -> 4 `i 152  ]
-"421
-[; ;main.c: 421:                     clcd_clear();
+"416
+[; ;main.c: 416:                     clcd_clear();
 {
-"423
-[; ;main.c: 423:                     clcd_print("TIME: 00:30", (0xC0 + 0));
+"418
+[; ;main.c: 418:                     clcd_print("TIME: 00:30", (0xC0 + 0));
 [e = _quick_start_active -> -> 1 `i `uc ]
-"424
-[; ;main.c: 424:                     clcd_print("4:+30s 5:Pause", (0x90 + (0)));
+"419
+[; ;main.c: 419:                     clcd_print("4:+30s 5:Pause", (0x90 + (0)));
 [e = _quick_start_just_started -> -> 1 `i `uc ]
-"426
-[; ;main.c: 426:                 }
+"421
+[; ;main.c: 421:                 }
 [e = _seconds -> -> 30 `i `uc ]
-"427
-[; ;main.c: 427:                 else
+"422
+[; ;main.c: 422:                 else
 [e = _countdown_running -> -> 1 `i `uc ]
-"428
-[; ;main.c: 428:                 {
+"423
+[; ;main.c: 423:                 {
 [e = _time_set -> -> 1 `i `uc ]
-"430
-[; ;main.c: 430:                 }
+"425
+[; ;main.c: 425:                 }
 [e ( _clcd_clear ..  ]
-"431
-[; ;main.c: 431:             }
+"426
+[; ;main.c: 426:             }
 [e ( _clcd_print (2 , :s 24C -> + -> 128 `i -> 0 `i `uc ]
-"432
-[; ;main.c: 432:         }
+"427
+[; ;main.c: 427:         }
 [e ( _clcd_print (2 , :s 25C -> + -> 192 `i -> 0 `i `uc ]
-"433
-[; ;main.c: 433: 
+"428
+[; ;main.c: 428: 
 [e ( _clcd_print (2 , :s 26C -> + -> 144 `i -> 0 `i `uc ]
-"434
-[; ;main.c: 434: 
+"429
+[; ;main.c: 429: 
 [e ( _clcd_print (2 , :s 27C -> + -> 208 `i -> 0 `i `uc ]
-"435
-[; ;main.c: 435: 
+"430
+[; ;main.c: 430: 
 }
 [e $U 153  ]
-"436
-[; ;main.c: 436: 
+"431
+[; ;main.c: 431: 
 [e :U 152 ]
-"437
-[; ;main.c: 437:         else if ((mode == 1 || mode == 2) && !time_set)
+"432
+[; ;main.c: 432:         else if ((mode == 1 || mode == 2) && !time_set)
 {
-"438
-[; ;main.c: 438:         {
+"433
+[; ;main.c: 433:         {
 [e ( _clcd_clear ..  ]
-"439
-[; ;main.c: 439:             set_time(key);
+"434
+[; ;main.c: 434:             set_time(key);
 }
 [e :U 153 ]
-"440
-[; ;main.c: 440:         }
+"435
+[; ;main.c: 435:         }
 }
 [e :U 148 ]
-"441
-[; ;main.c: 441: 
+"436
+[; ;main.c: 436: 
 }
 [e $U 154  ]
-"446
-[; ;main.c: 446:         {
+"441
+[; ;main.c: 441:         {
 [e :U 147 ]
 [e $ ! && || == -> _mode `i -> 1 `i == -> _mode `i -> 2 `i ! != -> _time_set `i -> 0 `i 155  ]
-"447
-[; ;main.c: 447:             set_temperature(key);
+"442
+[; ;main.c: 442:             set_temperature(key);
 {
-"448
-[; ;main.c: 448:         }
+"443
+[; ;main.c: 443:         }
 [e ( _set_time (1 _key ]
-"449
-[; ;main.c: 449: 
+"444
+[; ;main.c: 444: 
 }
 [e $U 156  ]
-"454
-[; ;main.c: 454:         {
+"449
+[; ;main.c: 449:         {
 [e :U 155 ]
 [e $ ! && == -> _mode `i -> 3 `i == -> _conv_state `i -> 0 `i 157  ]
-"455
-[; ;main.c: 455:             if (key == 6)
+"450
+[; ;main.c: 450:             if (key == 6)
 {
-"456
-[; ;main.c: 456:             {
+"451
+[; ;main.c: 451:             {
 [e ( _set_temperature (1 _key ]
-"457
-[; ;main.c: 457:                 stop_and_return_to_menu();
+"452
+[; ;main.c: 452:                 stop_and_return_to_menu();
 }
 [e :U 157 ]
 [e :U 156 ]
 [e :U 154 ]
+"457
+[; ;main.c: 457: 
+[e $ ! && == -> _mode `i -> 3 `i == -> _conv_state `i -> 1 `i 158  ]
+"458
+[; ;main.c: 458: 
+{
+"459
+[; ;main.c: 459:         if (mode == 3 && conv_state == 2 && !time_set)
+[e $ ! == -> _key `i -> 6 `i 159  ]
+"460
+[; ;main.c: 460:         {
+{
+"461
+[; ;main.c: 461:             set_time(key);
+[e ( _stop_and_return_to_menu ..  ]
 "462
 [; ;main.c: 462: 
-[e $ ! && == -> _mode `i -> 3 `i == -> _conv_state `i -> 1 `i 158  ]
-"463
-[; ;main.c: 463: 
-{
-"464
-[; ;main.c: 464:         if (mode == 3 && conv_state == 2 && !time_set)
-[e $ ! == -> _key `i -> 6 `i 159  ]
-"465
-[; ;main.c: 465:         {
-{
-"466
-[; ;main.c: 466:             set_time(key);
-[e ( _stop_and_return_to_menu ..  ]
-"467
-[; ;main.c: 467: 
 }
 [e :U 159 ]
-"468
-[; ;main.c: 468:             if (time_set)
+"463
+[; ;main.c: 463:             if (time_set)
 }
 [e :U 158 ]
-"473
-[; ;main.c: 473: 
+"468
+[; ;main.c: 468: 
 [e $ ! && && == -> _mode `i -> 3 `i == -> _conv_state `i -> 2 `i ! != -> _time_set `i -> 0 `i 160  ]
-"474
-[; ;main.c: 474: 
+"469
+[; ;main.c: 469: 
 {
-"475
-[; ;main.c: 475: 
+"470
+[; ;main.c: 470: 
 [e ( _set_time (1 _key ]
-"477
-[; ;main.c: 477:         if ((mode == 1 || mode == 2) && time_set)
+"472
+[; ;main.c: 472:         if ((mode == 1 || mode == 2) && time_set)
 [e $ ! != -> _time_set `i -> 0 `i 161  ]
-"478
-[; ;main.c: 478:         {
+"473
+[; ;main.c: 473:         {
 {
-"479
-[; ;main.c: 479:             if (key == 4)
+"474
+[; ;main.c: 474:             if (key == 4)
 [e = _conv_state -> -> 3 `i `uc ]
-"480
-[; ;main.c: 480:             {
+"475
+[; ;main.c: 475:             {
 }
 [e :U 161 ]
-"481
-[; ;main.c: 481:                 countdown_running = 1;
+"476
+[; ;main.c: 476:                 countdown_running = 1;
 }
 [e :U 160 ]
-"486
-[; ;main.c: 486:                 countdown_running = 0;
+"481
+[; ;main.c: 481:                 countdown_running = 0;
 [e $ ! && || == -> _mode `i -> 1 `i == -> _mode `i -> 2 `i != -> _time_set `i -> 0 `i 162  ]
-"487
-[; ;main.c: 487:                 countdown_paused = 1;
+"482
+[; ;main.c: 482:                 countdown_paused = 1;
 {
-"488
-[; ;main.c: 488:             }
+"483
+[; ;main.c: 483:             }
 [e $ ! == -> _key `i -> 4 `i 163  ]
-"489
-[; ;main.c: 489:             else if (key == 6)
+"484
+[; ;main.c: 484:             else if (key == 6)
 {
-"490
-[; ;main.c: 490:             {
+"485
+[; ;main.c: 485:             {
 [e = _countdown_running -> -> 1 `i `uc ]
-"491
-[; ;main.c: 491:                 stop_and_return_to_menu();
+"486
+[; ;main.c: 486:                 stop_and_return_to_menu();
 [e = _countdown_paused -> -> 0 `i `uc ]
-"492
-[; ;main.c: 492:             }
+"487
+[; ;main.c: 487:             }
 }
 [e $U 164  ]
-"493
-[; ;main.c: 493:         }
+"488
+[; ;main.c: 488:         }
 [e :U 163 ]
 [e $ ! == -> _key `i -> 5 `i 165  ]
-"494
-[; ;main.c: 494: 
+"489
+[; ;main.c: 489: 
 {
-"495
-[; ;main.c: 495: 
+"490
+[; ;main.c: 490: 
 [e = _countdown_running -> -> 0 `i `uc ]
-"496
-[; ;main.c: 496: 
+"491
+[; ;main.c: 491: 
 [e = _countdown_paused -> -> 1 `i `uc ]
-"497
-[; ;main.c: 497: 
+"492
+[; ;main.c: 492: 
 }
 [e $U 166  ]
-"498
-[; ;main.c: 498:         if (mode == 3 && conv_state == 3 && time_set)
+"493
+[; ;main.c: 493:         if (mode == 3 && conv_state == 3 && time_set)
 [e :U 165 ]
 [e $ ! == -> _key `i -> 6 `i 167  ]
-"499
-[; ;main.c: 499:         {
+"494
+[; ;main.c: 494:         {
 {
-"500
-[; ;main.c: 500:             if (key == 4)
+"495
+[; ;main.c: 495:             if (key == 4)
 [e ( _stop_and_return_to_menu ..  ]
-"501
-[; ;main.c: 501:             {
+"496
+[; ;main.c: 496:             {
 }
 [e :U 167 ]
 [e :U 166 ]
 [e :U 164 ]
-"502
-[; ;main.c: 502:                 countdown_running = 1;
+"497
+[; ;main.c: 497:                 countdown_running = 1;
 }
 [e :U 162 ]
-"507
-[; ;main.c: 507:                 countdown_running = 0;
+"502
+[; ;main.c: 502:                 countdown_running = 0;
 [e $ ! && && == -> _mode `i -> 3 `i == -> _conv_state `i -> 3 `i != -> _time_set `i -> 0 `i 168  ]
-"508
-[; ;main.c: 508:                 countdown_paused = 1;
+"503
+[; ;main.c: 503:                 countdown_paused = 1;
 {
-"509
-[; ;main.c: 509:             }
+"504
+[; ;main.c: 504:             }
 [e $ ! == -> _key `i -> 4 `i 169  ]
-"510
-[; ;main.c: 510:             else if (key == 6)
+"505
+[; ;main.c: 505:             else if (key == 6)
 {
-"511
-[; ;main.c: 511:             {
+"506
+[; ;main.c: 506:             {
 [e = _countdown_running -> -> 1 `i `uc ]
-"512
-[; ;main.c: 512:                 stop_and_return_to_menu();
+"507
+[; ;main.c: 507:                 stop_and_return_to_menu();
 [e = _countdown_paused -> -> 0 `i `uc ]
-"513
-[; ;main.c: 513:             }
+"508
+[; ;main.c: 508:             }
 }
 [e $U 170  ]
-"514
-[; ;main.c: 514:         }
+"509
+[; ;main.c: 509:         }
 [e :U 169 ]
 [e $ ! == -> _key `i -> 5 `i 171  ]
-"515
-[; ;main.c: 515: 
+"510
+[; ;main.c: 510: 
 {
-"516
-[; ;main.c: 516: 
+"511
+[; ;main.c: 511: 
 [e = _countdown_running -> -> 0 `i `uc ]
-"517
-[; ;main.c: 517: 
+"512
+[; ;main.c: 512: 
 [e = _countdown_paused -> -> 1 `i `uc ]
-"518
-[; ;main.c: 518: 
+"513
+[; ;main.c: 513: 
 }
 [e $U 172  ]
-"519
-[; ;main.c: 519:            if (mode == 4 && quick_start_active)
+"514
+[; ;main.c: 514:            if (mode == 4 && quick_start_active)
 [e :U 171 ]
 [e $ ! == -> _key `i -> 6 `i 173  ]
-"520
-[; ;main.c: 520:            {
+"515
+[; ;main.c: 515:            {
 {
-"521
-[; ;main.c: 521:                if (quick_start_just_started)
+"516
+[; ;main.c: 516:                if (quick_start_just_started)
 [e ( _stop_and_return_to_menu ..  ]
-"522
-[; ;main.c: 522:                {
+"517
+[; ;main.c: 517:                {
 }
 [e :U 173 ]
 [e :U 172 ]
 [e :U 170 ]
-"523
-[; ;main.c: 523:                    quick_start_just_started = 0;
+"518
+[; ;main.c: 518:                    quick_start_just_started = 0;
 }
 [e :U 168 ]
-"528
-[; ;main.c: 528:                    {
+"523
+[; ;main.c: 523:                    {
 [e $ ! && == -> _mode `i -> 4 `i != -> _quick_start_active `i -> 0 `i 174  ]
-"529
-[; ;main.c: 529:                        seconds += 30;
+"524
+[; ;main.c: 524:                        seconds += 30;
 {
-"530
-[; ;main.c: 530: 
+"525
+[; ;main.c: 525: 
 [e $ ! != -> _quick_start_just_started `i -> 0 `i 175  ]
-"531
-[; ;main.c: 531:                        if (seconds >= 60)
+"526
+[; ;main.c: 526:                        if (seconds >= 60)
 {
-"532
-[; ;main.c: 532:                        {
+"527
+[; ;main.c: 527:                        {
 [e = _quick_start_just_started -> -> 0 `i `uc ]
-"533
-[; ;main.c: 533:                            minutes += seconds / 60;
+"528
+[; ;main.c: 528:                            minutes += seconds / 60;
 }
 [e $U 176  ]
-"534
-[; ;main.c: 534:                            seconds %= 60;
+"529
+[; ;main.c: 529:                            seconds %= 60;
 [e :U 175 ]
 [e $ ! == -> _key `i -> 4 `i 177  ]
-"535
-[; ;main.c: 535:                        }
+"530
+[; ;main.c: 530:                        }
 {
-"536
-[; ;main.c: 536: 
+"531
+[; ;main.c: 531: 
 [e $ ! != -> _countdown_running `i -> 0 `i 178  ]
-"537
-[; ;main.c: 537:                        clcd_putch(minutes / 10 + '0', (0xC0 + 6));
+"532
+[; ;main.c: 532:                        clcd_putch(minutes / 10 + '0', (0xC0 + 6));
 {
-"538
-[; ;main.c: 538:                        clcd_putch(minutes % 10 + '0', (0xC0 + 7));
+"533
+[; ;main.c: 533:                        clcd_putch(minutes % 10 + '0', (0xC0 + 7));
 [e =+ _seconds -> -> 30 `i `uc ]
-"540
-[; ;main.c: 540:                        clcd_putch(seconds / 10 + '0', (0xC0 + 9));
+"535
+[; ;main.c: 535:                        clcd_putch(seconds / 10 + '0', (0xC0 + 9));
 [e $ ! >= -> _seconds `i -> 60 `i 179  ]
-"541
-[; ;main.c: 541:                        clcd_putch(seconds % 10 + '0', (0xC0 + 10));
+"536
+[; ;main.c: 536:                        clcd_putch(seconds % 10 + '0', (0xC0 + 10));
 {
-"542
-[; ;main.c: 542:                    }
+"537
+[; ;main.c: 537:                    }
 [e =+ _minutes -> / -> _seconds `i -> 60 `i `uc ]
-"543
-[; ;main.c: 543:                    else
+"538
+[; ;main.c: 538:                    else
 [e =% _seconds -> 60 `i ]
-"544
-[; ;main.c: 544:                    {
+"539
+[; ;main.c: 539:                    {
 }
 [e :U 179 ]
-"546
-[; ;main.c: 546:                        countdown_paused = 0;
+"541
+[; ;main.c: 541:                        countdown_paused = 0;
 [e ( _clcd_putch (2 , -> + -> / -> _minutes `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 6 `i `uc ]
-"547
-[; ;main.c: 547:                    }
+"542
+[; ;main.c: 542:                    }
 [e ( _clcd_putch (2 , -> + -> % -> _minutes `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 7 `i `uc ]
-"548
-[; ;main.c: 548:                }
+"543
+[; ;main.c: 543:                }
 [e ( _clcd_putch (2 , -> -> 58 `ui `uc -> + -> 192 `i -> 8 `i `uc ]
-"549
-[; ;main.c: 549:                else if (key == 5)
+"544
+[; ;main.c: 544:                else if (key == 5)
 [e ( _clcd_putch (2 , -> + -> / -> _seconds `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 9 `i `uc ]
-"550
-[; ;main.c: 550:                {
+"545
+[; ;main.c: 545:                {
 [e ( _clcd_putch (2 , -> + -> % -> _seconds `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 10 `i `uc ]
-"551
-[; ;main.c: 551:                    countdown_running = 0;
+"546
+[; ;main.c: 546:                    countdown_running = 0;
 }
 [e $U 180  ]
-"552
-[; ;main.c: 552:                    countdown_paused = 1;
+"547
+[; ;main.c: 547:                    countdown_paused = 1;
 [e :U 178 ]
-"553
-[; ;main.c: 553:                }
+"548
+[; ;main.c: 548:                }
 {
-"554
-[; ;main.c: 554:                else if (key == 6)
+"549
+[; ;main.c: 549:                else if (key == 6)
 [e = _countdown_running -> -> 1 `i `uc ]
-"555
-[; ;main.c: 555:                {
+"550
+[; ;main.c: 550:                {
 [e = _countdown_paused -> -> 0 `i `uc ]
-"556
-[; ;main.c: 556:                    stop_and_return_to_menu();
+"551
+[; ;main.c: 551:                    stop_and_return_to_menu();
 }
 [e :U 180 ]
-"557
-[; ;main.c: 557:                }
+"552
+[; ;main.c: 552:                }
 }
 [e $U 181  ]
-"558
-[; ;main.c: 558:            }
+"553
+[; ;main.c: 553:            }
 [e :U 177 ]
 [e $ ! == -> _key `i -> 5 `i 182  ]
+"554
+[; ;main.c: 554: 
+{
+"555
+[; ;main.c: 555: 
+[e = _countdown_running -> -> 0 `i `uc ]
+"556
+[; ;main.c: 556: 
+[e = _countdown_paused -> -> 1 `i `uc ]
+"557
+[; ;main.c: 557: 
+}
+[e $U 183  ]
+"558
+[; ;main.c: 558: 
+[e :U 182 ]
+[e $ ! == -> _key `i -> 6 `i 184  ]
 "559
 [; ;main.c: 559: 
 {
 "560
-[; ;main.c: 560: 
-[e = _countdown_running -> -> 0 `i `uc ]
-"561
-[; ;main.c: 561: 
-[e = _countdown_paused -> -> 1 `i `uc ]
-"562
-[; ;main.c: 562: 
-}
-[e $U 183  ]
-"563
-[; ;main.c: 563: 
-[e :U 182 ]
-[e $ ! == -> _key `i -> 6 `i 184  ]
-"564
-[; ;main.c: 564: 
-{
-"565
-[; ;main.c: 565:         if (timer_1s_flag)
+[; ;main.c: 560:         if (timer_1s_flag)
 [e ( _stop_and_return_to_menu ..  ]
-"566
-[; ;main.c: 566:         {
+"561
+[; ;main.c: 561:         {
 }
 [e :U 184 ]
 [e :U 183 ]
 [e :U 181 ]
 [e :U 176 ]
-"567
-[; ;main.c: 567:             timer_1s_flag = 0;
+"562
+[; ;main.c: 562:             timer_1s_flag = 0;
 }
 [e :U 174 ]
-"574
-[; ;main.c: 574:                     preheat_seconds--;
+"569
+[; ;main.c: 569:                     preheat_seconds--;
 [e $ ! != -> _timer_1s_flag `i -> 0 `i 185  ]
+"570
+[; ;main.c: 570:                 }
+{
+"571
+[; ;main.c: 571: 
+[e = _timer_1s_flag -> -> 0 `i `uc ]
+"574
+[; ;main.c: 574:                 clcd_putch(preheat_seconds % 10 + '0', (0x90 + (13)));
+[e $ ! && == -> _mode `i -> 3 `i == -> _conv_state `i -> 1 `i 186  ]
 "575
-[; ;main.c: 575:                 }
+[; ;main.c: 575: 
 {
 "576
-[; ;main.c: 576: 
-[e = _timer_1s_flag -> -> 0 `i `uc ]
-"579
-[; ;main.c: 579:                 clcd_putch((preheat_seconds / 10) % 10 + '0',
-[e $ ! && == -> _mode `i -> 3 `i == -> _conv_state `i -> 1 `i 186  ]
-"580
-[; ;main.c: 580:                            (0x90 + (12)));
-{
-"581
-[; ;main.c: 581:                 clcd_putch(preheat_seconds % 10 + '0',
+[; ;main.c: 576:                 if (preheat_seconds == 0)
 [e $ ! > -> _preheat_seconds `i -> 0 `i 187  ]
-"582
-[; ;main.c: 582:                            (0x90 + (13)));
+"577
+[; ;main.c: 577:                 {
 {
-"583
-[; ;main.c: 583: 
+"578
+[; ;main.c: 578:                     conv_state = 2;
 [e -- _preheat_seconds -> -> 1 `i `uc ]
-"584
-[; ;main.c: 584:                 if (preheat_seconds == 0)
+"579
+[; ;main.c: 579: 
 }
 [e :U 187 ]
-"586
-[; ;main.c: 586:                     conv_state = 2;
+"581
+[; ;main.c: 581: 
 [e ( _clcd_putch (2 , -> + -> % / -> _preheat_seconds `i -> 100 `i -> 10 `i `ui -> 48 `ui `uc -> + -> 144 `i -> 11 `i `uc ]
-"588
-[; ;main.c: 588:                     reset_time_entry();
+"582
+[; ;main.c: 582:                     clcd_clear();
 [e ( _clcd_putch (2 , -> + -> % / -> _preheat_seconds `i -> 10 `i -> 10 `i `ui -> 48 `ui `uc -> + -> 144 `i -> 12 `i `uc ]
-"590
-[; ;main.c: 590:                     clcd_clear();
+"583
+[; ;main.c: 583:                     clcd_print("PREHEAT COMPLETE", (0x80 + 0));
 [e ( _clcd_putch (2 , -> + -> % -> _preheat_seconds `i -> 10 `i `ui -> 48 `ui `uc -> + -> 144 `i -> 13 `i `uc ]
-"593
-[; ;main.c: 593:                 }
+"585
+[; ;main.c: 585:                 }
 [e $ ! == -> _preheat_seconds `i -> 0 `i 188  ]
-"594
-[; ;main.c: 594:             }
+"586
+[; ;main.c: 586:             }
 {
-"595
-[; ;main.c: 595: 
+"587
+[; ;main.c: 587: 
 [e = _conv_state -> -> 2 `i `uc ]
-"597
-[; ;main.c: 597: 
+"589
+[; ;main.c: 589: 
 [e ( _reset_time_entry ..  ]
-"599
-[; ;main.c: 599:                      ((mode == 1) ||
+"591
+[; ;main.c: 591:             {
 [e ( _clcd_clear ..  ]
-"600
-[; ;main.c: 600:                       (mode == 2) ||
+"592
+[; ;main.c: 592:                 if (seconds > 0)
 [e ( _clcd_print (2 , :s 28C -> + -> 128 `i -> 0 `i `uc ]
-"601
-[; ;main.c: 601:                       (mode == 3 && conv_state == 3) ||
+"593
+[; ;main.c: 593:                 {
 [e ( _clcd_print (2 , :s 29C -> + -> 192 `i -> 0 `i `uc ]
-"602
-[; ;main.c: 602:                       (mode == 4 && quick_start_active)))
+"594
+[; ;main.c: 594:                     seconds--;
 }
 [e :U 188 ]
-"603
-[; ;main.c: 603:             {
+"595
+[; ;main.c: 595:                 }
 }
 [e $U 189  ]
-"607
-[; ;main.c: 607:                 }
+"599
+[; ;main.c: 599:                     seconds = 59;
 [e :U 186 ]
 [e $ ! && != -> _countdown_running `i -> 0 `i || || || == -> _mode `i -> 1 `i == -> _mode `i -> 2 `i && == -> _mode `i -> 3 `i == -> _conv_state `i -> 3 `i && == -> _mode `i -> 4 `i != -> _quick_start_active `i -> 0 `i 190  ]
-"612
-[; ;main.c: 612:                 }
+"600
+[; ;main.c: 600:                 }
 {
-"613
-[; ;main.c: 613: 
+"601
+[; ;main.c: 601: 
 [e $ ! > -> _seconds `i -> 0 `i 191  ]
-"614
-[; ;main.c: 614: 
+"602
+[; ;main.c: 602: 
 {
-"615
-[; ;main.c: 615:                 if (mode == 4 && quick_start_active)
+"603
+[; ;main.c: 603:                 if (mode == 4 && quick_start_active)
 [e -- _seconds -> -> 1 `i `uc ]
-"616
-[; ;main.c: 616:                 {
+"604
+[; ;main.c: 604:                 {
 }
 [e $U 192  ]
-"617
-[; ;main.c: 617:                     clcd_putch(minutes / 10 + '0', (0xC0 + 6));
+"605
+[; ;main.c: 605:                     clcd_putch(minutes / 10 + '0', (0xC0 + 6));
 [e :U 191 ]
 [e $ ! > -> _minutes `i -> 0 `i 193  ]
-"618
-[; ;main.c: 618:                     clcd_putch(minutes % 10 + '0', (0xC0 + 7));
+"606
+[; ;main.c: 606:                     clcd_putch(minutes % 10 + '0', (0xC0 + 7));
 {
-"619
-[; ;main.c: 619:                     clcd_putch(':', (0xC0 + 8));
+"607
+[; ;main.c: 607:                     clcd_putch(':', (0xC0 + 8));
 [e -- _minutes -> -> 1 `i `uc ]
-"620
-[; ;main.c: 620:                     clcd_putch(seconds / 10 + '0', (0xC0 + 9));
+"608
+[; ;main.c: 608:                     clcd_putch(seconds / 10 + '0', (0xC0 + 9));
 [e = _seconds -> -> 59 `i `uc ]
-"621
-[; ;main.c: 621:                     clcd_putch(seconds % 10 + '0', (0xC0 + 10));
+"609
+[; ;main.c: 609:                     clcd_putch(seconds % 10 + '0', (0xC0 + 10));
 }
 [e :U 193 ]
 [e :U 192 ]
-"624
-[; ;main.c: 624:                 {
+"612
+[; ;main.c: 612:                 {
 [e $ ! && == -> _mode `i -> 4 `i != -> _quick_start_active `i -> 0 `i 194  ]
-"625
-[; ;main.c: 625:                     display_cooking_time();
+"613
+[; ;main.c: 613:                     display_cooking_time();
 {
-"626
-[; ;main.c: 626:                 }
+"614
+[; ;main.c: 614:                 }
 [e ( _clcd_putch (2 , -> + -> / -> _minutes `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 6 `i `uc ]
-"627
-[; ;main.c: 627: 
+"615
+[; ;main.c: 615: 
 [e ( _clcd_putch (2 , -> + -> % -> _minutes `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 7 `i `uc ]
-"628
-[; ;main.c: 628: 
+"616
+[; ;main.c: 616: 
 [e ( _clcd_putch (2 , -> -> 58 `ui `uc -> + -> 192 `i -> 8 `i `uc ]
-"629
-[; ;main.c: 629:                 if (minutes == 0 && seconds == 0)
+"617
+[; ;main.c: 617:                 if (minutes == 0 && seconds == 0)
 [e ( _clcd_putch (2 , -> + -> / -> _seconds `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 9 `i `uc ]
-"630
-[; ;main.c: 630:                 {
+"618
+[; ;main.c: 618:                 {
 [e ( _clcd_putch (2 , -> + -> % -> _seconds `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 10 `i `uc ]
-"631
-[; ;main.c: 631:                     countdown_running = 0;
+"619
+[; ;main.c: 619:                     countdown_running = 0;
 }
 [e $U 195  ]
-"632
-[; ;main.c: 632:                     countdown_paused = 0;
+"620
+[; ;main.c: 620:                     countdown_paused = 0;
 [e :U 194 ]
-"633
-[; ;main.c: 633:                     time_set = 0;
+"621
+[; ;main.c: 621:                     time_set = 0;
 {
-"634
-[; ;main.c: 634: 
+"622
+[; ;main.c: 622: 
 [e ( _display_cooking_time ..  ]
-"635
-[; ;main.c: 635:                     quick_start_active = 0;
+"623
+[; ;main.c: 623:                     quick_start_active = 0;
 }
 [e :U 195 ]
-"638
-[; ;main.c: 638: 
+"626
+[; ;main.c: 626: 
 [e $ ! && == -> _minutes `i -> 0 `i == -> _seconds `i -> 0 `i 196  ]
-"639
-[; ;main.c: 639:                     mode = 0;
+"627
+[; ;main.c: 627:                     mode = 0;
 {
-"640
-[; ;main.c: 640: 
+"628
+[; ;main.c: 628: 
 [e = _countdown_running -> -> 0 `i `uc ]
-"641
-[; ;main.c: 641:                     clcd_clear();
+"629
+[; ;main.c: 629:                     clcd_clear();
 [e = _countdown_paused -> -> 0 `i `uc ]
-"642
-[; ;main.c: 642:                     clcd_print("TIME UP!!!", (0xC0 + 3));
+"630
+[; ;main.c: 630:                     clcd_print("TIME UP!!!", (0xC0 + 3));
 [e = _time_set -> -> 0 `i `uc ]
-"644
-[; ;main.c: 644: 
+"632
+[; ;main.c: 632: 
 [e = _quick_start_active -> -> 0 `i `uc ]
-"645
-[; ;main.c: 645:                     _delay((unsigned long)((2000)*(20000000/4000.0)));
+"633
+[; ;main.c: 633:                     _delay((unsigned long)((2000)*(20000000/4000.0)));
 [e = _conv_state -> -> 0 `i `uc ]
-"646
-[; ;main.c: 646:                     display_menu();
+"634
+[; ;main.c: 634:                     display_menu();
 [e = _temperature -> -> 0 `i `uc ]
-"648
-[; ;main.c: 648:             }
+"636
+[; ;main.c: 636:             }
 [e = _mode -> -> 0 `i `uc ]
-"650
-[; ;main.c: 650:     }
+"638
+[; ;main.c: 638:     }
 [e ( _clcd_clear ..  ]
-"651
-[; ;main.c: 651: }
+"639
+[; ;main.c: 639: }
 [e ( _clcd_print (2 , :s 30C -> + -> 192 `i -> 3 `i `uc ]
-"652
+"640
 [e ( _clcd_print (2 , :s 31C -> + -> 144 `i -> 0 `i `uc ]
-"654
+"642
 [e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"655
+"643
 [e ( _display_menu ..  ]
-"656
+"644
 }
 [e :U 196 ]
-"657
+"645
 }
 [e :U 190 ]
 [e :U 189 ]
-"658
+"646
 }
 [e :U 185 ]
-"659
+"647
 }
 [e :U 144 ]
-"387
-[; ;main.c: 387:         {
+"382
+[; ;main.c: 382:         {
 [e $U 145  ]
 [e :U 146 ]
-"660
+"648
 [e :UE 143 ]
 }
 [a 4C 52 46 32 81 117 105 99 107 32 83 116 97 114 116 0 ]
